@@ -1,0 +1,5 @@
+# gitingore
+
+__pycache__
+*.pyc
+*.pyd
