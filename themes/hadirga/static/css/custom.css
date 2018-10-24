@@ -128,7 +128,7 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
   color: #505050;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Dosis', sans-serif;
 }
 .footer {
   position: absolute;
@@ -175,7 +175,7 @@ Header
 ---------------------------------------------------------*/
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Dosis', sans-serif;
   font-weight: bold;
 }
 
@@ -184,7 +184,7 @@ Navbar
 ---------------------------------------------------------*/
 
 .navbar {
-  background-color: #ff4d44;
+  background-color: #10122b;
   border-bottom: 0px;
 }
 
@@ -203,7 +203,7 @@ Navbar
   font-weight: 500;
 }
 
-.navbar-toggler-icon { 
+.navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
 }
 
@@ -306,26 +306,26 @@ Homepage cards
     -moz-columns: 1;
     columns: 1;
   }
- 
+
   @media (min-width: 480px) {
     .homepage .article_list {
       -webkit-columns: 1;
       -moz-columns: 1;
       columns: 1;
     }
-    
+
     .homepage .article_list li{
       font-size: 1.2em;
     }
   }
-  
+
 
 /* ---------------------------------------------------------
 Technical Notes
 ---------------------------------------------------------*/
 
 .technica_note, .page {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Dosis', sans-serif;
 }
 
 .technical_note .technical_note_date{
@@ -371,7 +371,7 @@ Articles
 
 .article h1{
   font-weight: bold;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Dosis', sans-serif;
   text-align: center;
   margin-bottom:10px;
 }
@@ -407,32 +407,32 @@ Articles
 .article .article_date{
   font-size: 1.4em;
   text-align: center;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Dosis', sans-serif;
 }
 
 .article h2{
   font-size: 1.6em;
   margin-top: 1em;
   margin-bottom: .5em;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Dosis', sans-serif;
   font-weight: bold;
 }
 
 .article h3{
   font-size: 1.4em;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Dosis', sans-serif;
   font-weight: bold;
 }
 
 .article h4{
   font-size: 1.2em;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Dosis', sans-serif;
   font-weight: bold;
 }
 
 .article h5{
   font-size: 1.1em;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Dosis', sans-serif;
   font-weight: bold;
 }
 

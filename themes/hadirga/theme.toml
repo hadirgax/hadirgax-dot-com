@@ -9,7 +9,7 @@ min_version = 0.25
 
 [author]
   name = "Hadir Garcia-Castro"
-  homepage = "https://chrisalbon.com"
+  homepage = "https://hadir.ga"
 
 [based on]
   name = "Chris Albon"
