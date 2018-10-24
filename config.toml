@@ -1,0 +1,6 @@
+baseURL = "https://hadir.ga/"
+languageCode = "en-us"
+title = "hadirga's notes"
+theme = "hadirga"
+
+publishDir = "docs"

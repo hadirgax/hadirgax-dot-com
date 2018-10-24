@@ -1,6 +1,21 @@
-# gitingore
+# Gitingore file
+##################
 
-__pycache__
+# Files
+#########
+.ipynb.checkpoints
+*/.ipynb.checkpoints/*
+
+# Folders
+###########
+[Bb]ench/
+__pycache__/
+
+# Binaries
+############
+*.exe
+*.dll
 *.pyc
 *.pyd
 *.bat
+*.ps1

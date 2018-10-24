@@ -1,0 +1,23 @@
+name = "hadirga"
+license = "MIT"
+description = "A bootstrap 4 Hugo theme for notes."
+tags = ["bootstrap", "blog", "font awesome", "hadirga"]
+features = ["responsive", "blog"]
+min_version = 0.25
+
+
+
+[author]
+  name = "Hadir Garcia-Castro"
+  homepage = "https://chrisalbon.com"
+
+[based on]
+  name = "Chris Albon"
+  homepage = "https://chrisalbon.com"
+
+  name = "Alan Orth"
+  homepage = "https://englishbulgaria.net"
+
+[original]
+  author = "mdo"
+  homepage = "https://v4-alpha.getbootstrap.com/examples/blog/"
