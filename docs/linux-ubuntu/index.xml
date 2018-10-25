@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux ubuntus on hadirga&#39;s notes</title>
-    <link>https://hadir.ga/linux-ubuntu/</link>
+    <link>https://notes.hadir.ga/linux-ubuntu/</link>
     <description>Recent content in Linux ubuntus on hadirga&#39;s notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://hadir.ga/linux-ubuntu/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://notes.hadir.ga/linux-ubuntu/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>https://hadir.ga/linux-ubuntu/virtualbox/</link>
+      <link>https://notes.hadir.ga/linux-ubuntu/virtualbox/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hadir.ga/linux-ubuntu/virtualbox/</guid>
+      <guid>https://notes.hadir.ga/linux-ubuntu/virtualbox/</guid>
       <description>Install Guest Additions on Ubuntu  Click on Install Guest Additions… from the Devices menu, then choose to browse the content of the CD when requested. Check if sudo is installed, otherwise install it. bash su - password: apt-get install sudo -y usermod -aG sudo yourusername sudo apt-get install linux-headers-amd64 `  if it is not running, then install gcc :bash:&amp;lsquo;sudo apt-get install build-essential gcc make perl&amp;rsquo;
  Run :bash:&amp;ldquo;sudo sh /media/your_username/VBoxLinuxAdditions.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://hadir.ga/linux-ubuntu/add-new-repository/</link>
+      <link>https://notes.hadir.ga/linux-ubuntu/add-new-repository/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hadir.ga/linux-ubuntu/add-new-repository/</guid>
+      <guid>https://notes.hadir.ga/linux-ubuntu/add-new-repository/</guid>
       <description>to add a new repository in ubuntu linux, it is necessary to run the terminal as root.
 to run terminal as root, use: sudo -i
 then run the command line on bash
@@ -36,10 +36,10 @@ add-apt-repository &amp;lsquo;deb http://apt.postgresql.org/pub/repos/apt/ bioni
     
     <item>
       <title></title>
-      <link>https://hadir.ga/linux-ubuntu/installation-files-/</link>
+      <link>https://notes.hadir.ga/linux-ubuntu/installation-files-/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hadir.ga/linux-ubuntu/installation-files-/</guid>
+      <guid>https://notes.hadir.ga/linux-ubuntu/installation-files-/</guid>
       <description>to install .sh files  make the file executable: Here we have two options: a) right click over the file, go to properties, then click on the Permissions tab and then in Execute, check the &amp;lsquo;Allow executing file as program&amp;rsquo; option. b) In the terminal write this command line :bash:&amp;lsquo;chmod ug+x ./file_name.sh&amp;rsquo;
  execute the file in the terminal using the command line, :bash:&amp;lsquo;./file_name.sh&amp;rsquo;
   install a .deb file  execute in the terminal using the command line, :bash:&amp;lsquo;sudo dpkg -i filename.</description>
@@ -47,10 +47,10 @@ add-apt-repository &amp;lsquo;deb http://apt.postgresql.org/pub/repos/apt/ bioni
     
     <item>
       <title></title>
-      <link>https://hadir.ga/linux-ubuntu/postgresql/</link>
+      <link>https://notes.hadir.ga/linux-ubuntu/postgresql/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hadir.ga/linux-ubuntu/postgresql/</guid>
+      <guid>https://notes.hadir.ga/linux-ubuntu/postgresql/</guid>
       <description>installation ubuntu comands to install postgresql:
 .. code-block:: bash $ update the repository base
 install the repository .. code-block:: bash $ sudo apt-get install postgresql-10
