@@ -1,6 +1,19 @@
-# Berbera Theme
+# Hadirga Theme
+The [hadir.ga's](https://notes.hadir.ga/) awesome static theme for my technical notes.
+
+## Quick start
+Install with `git` just typing:
+
+```cmd
+git clone https://github.com/hadirga/hugo-hadirga.git themes/hugo-hadirga
+```
+For detailed installation instructions visit the [demo](http://themes.gohugo.io/theme/hadirga/) at Hugo themes site.
+
+## Acknowledgements
+
+A big thank you to [Chris Albon](https://chrisalbon.com), [DigitalCraftsMan]( https://github.com/digitalcraftsman) and [Martin Donath](https://github.com/squidfunk). This project was based on theirs projects.
+
+Furthermore, thanks to [Steve Francia](https://gihub.com/spf13) for creating Hugo and the [awesome community](https://github.com/spf13/hugo/graphs/contributors) around the project (Hugo).
 
 ## License
-This repository contains the code of [Bootstrap](http://getbootstrap.com), which is licensed under the [MIT license](https://tldrlegal.com/license/mit-license), and [Font Awesome](http://fontawesome.io/), which uses [various licenses](http://fontawesome.io/license/).
-
-Otherwise, the contents are [GPLv3](https://www.gnu.org/licenses/gpl-3.0.txt).
+The theme is released under the MIT License. Read the [license](https://github.com/hadirga/hugo-hadirga/LICENSE.lic) for more information.

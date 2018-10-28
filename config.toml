@@ -1,6 +1,37 @@
 baseURL = "https://notes.hadir.ga/"
 languageCode = "en-us"
-title = "hadirga's notes"
+title = "hadir's notes"
 theme = "hadirga"
 
 publishDir = "docs"
+
+googleAnalytics = "GTM-NBL2HMB"
+
+[params]
+  # General information
+  author = "Hadir Garcia-Castro"
+  homepage = "https://hadir.ga"
+  description = "My technical notes on Supply Chain, Operations Research & Programming Languages."
+  license = "MIT License"
+
+  version = "0.1.0"
+  logo = "images/notes.hadir.ga-logo-01-300.png"
+  favicon = "images/hadir.ga-favicon_v02.png"
+
+  permalink = "#"
+
+  [params.palette]
+    primary = "#10122b"
+    accent  = "#39b54a"
+
+  [params.fonts]
+    hs = "Dosis"
+    text = "Roboto"
+    code = "Consolas"
+
+[social]
+  github = "hadirga"
+  gitlab = "hadirga"
+  linkedin = "hadirga"
+  instagram = "hadirga"
+  facebook = "hadirgc"

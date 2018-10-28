@@ -3,35 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://notes.hadir.ga/linux-ubuntu/virtualbox/</loc>
+    <loc>https://notes.hadir.ga/linux_ubuntu/virtualbox/</loc>
   </url>
   
   <url>
-    <loc>https://notes.hadir.ga/linux-ubuntu/add-new-repository/</loc>
+    <loc>https://notes.hadir.ga/linux_ubuntu/add-new-repository/</loc>
   </url>
   
   <url>
-    <loc>https://notes.hadir.ga/linux-ubuntu/installation-files-/</loc>
+    <loc>https://notes.hadir.ga/linux_ubuntu/installation-files-/</loc>
   </url>
   
   <url>
-    <loc>https://notes.hadir.ga/linux-ubuntu/postgresql/</loc>
-  </url>
-  
-  <url>
-    <loc>https://notes.hadir.ga/linux-xubuntu/virtualbox/</loc>
-  </url>
-  
-  <url>
-    <loc>https://notes.hadir.ga/linux-xubuntu/add-new-repository/</loc>
-  </url>
-  
-  <url>
-    <loc>https://notes.hadir.ga/linux-xubuntu/installation-files-/</loc>
-  </url>
-  
-  <url>
-    <loc>https://notes.hadir.ga/linux-xubuntu/postgresql/</loc>
+    <loc>https://notes.hadir.ga/linux_ubuntu/postgresql/</loc>
   </url>
   
   <url>
@@ -44,12 +28,7 @@
   </url>
   
   <url>
-    <loc>https://notes.hadir.ga/linux-ubuntu/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://notes.hadir.ga/linux-xubuntu/</loc>
+    <loc>https://notes.hadir.ga/linux_ubuntu/</loc>
     <priority>0</priority>
   </url>
   

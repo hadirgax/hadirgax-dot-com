@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+/* -------------- */
+/* Variables */
+/* -------------- */
+:root {
+    --font-headers: 'Dosis';
+    --font-body: 'Roboto'
+}
+
+
+
 /* ---------------------------------------------------------
 /* Computer Modern font
 ---------------------------------------------------------*/
@@ -128,7 +138,7 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
   color: #505050;
-  font-family: 'Dosis', sans-serif;
+  font-family: var(--font-body), sans-serif;
 }
 .footer {
   position: absolute;
@@ -175,7 +185,7 @@ Header
 ---------------------------------------------------------*/
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Dosis', sans-serif;
+  font-family: var(--font-headers), sans-serif;
   font-weight: bold;
 }
 
@@ -325,7 +335,7 @@ Technical Notes
 ---------------------------------------------------------*/
 
 .technica_note, .page {
-  font-family: 'Dosis', sans-serif;
+  font-family: var(--font-body), sans-serif;
 }
 
 .technical_note .technical_note_date{
@@ -371,7 +381,7 @@ Articles
 
 .article h1{
   font-weight: bold;
-  font-family: 'Dosis', sans-serif;
+  font-family: var(--font-headers), sans-serif;
   text-align: center;
   margin-bottom:10px;
 }
@@ -407,32 +417,32 @@ Articles
 .article .article_date{
   font-size: 1.4em;
   text-align: center;
-  font-family: 'Dosis', sans-serif;
+  font-family: var(--font-body), sans-serif;
 }
 
 .article h2{
   font-size: 1.6em;
   margin-top: 1em;
   margin-bottom: .5em;
-  font-family: 'Dosis', sans-serif;
+  font-family: var(--font-headers), sans-serif;
   font-weight: bold;
 }
 
 .article h3{
   font-size: 1.4em;
-  font-family: 'Dosis', sans-serif;
+  font-family: var(--font-headers), sans-serif;
   font-weight: bold;
 }
 
 .article h4{
   font-size: 1.2em;
-  font-family: 'Dosis', sans-serif;
+  font-family: var(--font-headers), sans-serif;
   font-weight: bold;
 }
 
 .article h5{
   font-size: 1.1em;
-  font-family: 'Dosis', sans-serif;
+  font-family: var(--font-headers), sans-serif;
   font-weight: bold;
 }
 
