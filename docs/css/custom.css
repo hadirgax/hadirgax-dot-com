@@ -3,9 +3,11 @@
 /* -------------- */
 /* Variables */
 /* -------------- */
+
 :root {
     --font-headers: 'Dosis';
-    --font-body: 'Roboto'
+    --font-body: 'Roboto';
+    --font-code: 'Consolas';
 }
 
 

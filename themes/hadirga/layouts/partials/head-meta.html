@@ -1,33 +1,27 @@
 {{ template "_internal/google_analytics.html" . }}
 {{ template "_internal/google_analytics_async.html" . }}
 
-
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
 
 {{ template "_internal/opengraph.html" . }}
 {{ template "_internal/twitter_cards.html" . }}
 
-<meta http-equiv="X-UA-Compatible" content="IE=10" />
+<meta http-equiv="X-UA-Compatible" content="IE=10">
 
-{{ with .Site.Title }}
-<meta name="apple-mobile-web-app-title" content="{{ . }}">
-{{ end }}
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+{{ $title := .Site.Title }}
+<meta name="apple-mobile-web-app-title" content="{{ $title }}" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-
-{{- with .Site.Params.google_verify_meta -}}
-<meta name="google-site-verification" content="{{ . }}" />
-{{ end }}
+{{ $google_verify_code := .Site.Params.google_verify_meta }}
+<meta name="google-site-verification" content="{{ $google_verify_code }}" />
 
 <!-- :TODO: take the verifications from Bing and Yandex -->
 {{- with .Site.Params.bing_verify_meta -}}
-<meta name="msvalidate.01" content="{{ . }}" />
-{{ end }}
+<meta name="msvalidate.01" content="{{ . }}" />{{ end }}
 
 {{- with .Site.Params.yandex_verify_meta -}}
-<meta name="yandex-verification" content="{{ . }}" />
-{{ end }}
+<meta name="yandex-verification" content="{{ . }}" />{{ end }}
 
 {{- .Hugo.Generator -}}

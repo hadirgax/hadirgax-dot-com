@@ -1,6 +1,10 @@
 baseURL = "https://notes.hadir.ga/"
+author = "Hadir Garcia-Castro"
+title = "Hadir's Notes | hadir.ga"
 languageCode = "en-us"
-title = "hadir's notes"
+copiright = "MIT License"
+
+
 theme = "hadirga"
 
 publishDir = "docs"
@@ -9,29 +13,56 @@ googleAnalytics = "GTM-NBL2HMB"
 
 [params]
   # General information
-  author = "Hadir Garcia-Castro"
   homepage = "https://hadir.ga"
   description = "My technical notes on Supply Chain, Operations Research & Programming Languages."
-  license = "MIT License"
 
   version = "0.1.0"
-  logo = "images/notes.hadir.ga-logo-01-300.png"
-  favicon = "images/hadir.ga-favicon_v02.png"
+  logo = "images/notes.hadir.ga-logo.png"
+  favicon = "images/hadir.ga-favicon.png"
 
-  permalink = "#"
+	permalink = "#"
+	google_verify_meta = "IYAUkSAAFbNKrdPe-9M1BNoyy8bJi7pwYoP1lPJeJrw"
+
 
   [params.palette]
     primary = "#10122b"
     accent  = "#39b54a"
 
-  [params.fonts]
-    hs = "Dosis"
-    text = "Roboto"
+  [params.font]
+    # if changed herem remember to change at .css files or use SCSS template.
+    headers = "Dosis"
+    body = "Roboto"
     code = "Consolas"
 
 [social]
+	email = "halexandergc@gmail.com"
+	facebook = "hadirgc"
   github = "hadirga"
   gitlab = "hadirga"
+  instagram = "hadir.ga"
   linkedin = "hadirga"
-  instagram = "hadirga"
-  facebook = "hadirgc"
+	skype = "keopsh"
+	twitter = "hadirga"
+	whatsapp = "+5511986746209"
+
+[[menu.main]]
+	name   = "Home"
+	url    = "https://hadir.ga/"
+	weight = 10
+
+[[menu.main]]
+	name   = "Notes"
+	url    = "/"
+	weight = 20
+
+[[menu.main]]
+	name   = "Social"
+	url    = "Social/"
+	weight = 30
+
+
+[blackfriday]
+	smartypants	= true
+	fractions = true
+	smartDashes = true
+	plainIDAnchors = true
