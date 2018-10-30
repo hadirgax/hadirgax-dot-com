@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="no-js">
+<head lang="en-us">
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'GTM-NBL2HMB', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'GTM-NBL2HMB', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+
+<meta property="og:title" content="Getting started" />
+<meta property="og:description" content="Installation Installing Hugo Hugo itself is just a single binary without dependencies on expensive runtimes like Ruby, Python or PHP and without dependencies on any databases. You just need to download the latest version. For more information read the official installation guides.
+Let&rsquo;s make sure Hugo is set up as expected. You should see a similar version number in your terminal:
+hugo version # Hugo Static Site Generator v0.15 BuildDate: 2016-01-03T12:47:47&#43;01:00  Installing Material Next, assuming you have Hugo up and running the hugo-material-docs theme can be installed with git:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://notes.hadir.ga/example/getting-started/" /><meta property="article:published_time" content="2016-03-09T00:11:02&#43;01:00"/>
+<meta property="article:modified_time" content="2016-03-09T00:11:02&#43;01:00"/>
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Getting started"/>
+<meta name="twitter:description" content="Installation Installing Hugo Hugo itself is just a single binary without dependencies on expensive runtimes like Ruby, Python or PHP and without dependencies on any databases. You just need to download the latest version. For more information read the official installation guides.
+Let&rsquo;s make sure Hugo is set up as expected. You should see a similar version number in your terminal:
+hugo version # Hugo Static Site Generator v0.15 BuildDate: 2016-01-03T12:47:47&#43;01:00  Installing Material Next, assuming you have Hugo up and running the hugo-material-docs theme can be installed with git:"/>
+<meta name="twitter:site" content="@hadirga"/>
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=10">
+
+
+<meta name="apple-mobile-web-app-title" content="Hadir&#39;s Notes | hadir.ga" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+
+<meta name="google-site-verification" content="IYAUkSAAFbNKrdPe-9M1BNoyy8bJi7pwYoP1lPJeJrw" />
+
+<meta name="generator" content="Hugo 0.49.2" />
+    
+
+
+
+
+
+<title>Getting started - Hadir&#39;s Notes | hadir.ga</title>
+
+
+<meta name="description" content="My technical notes on Supply Chain, Operations Research &amp; Programming Languages.">
+
+
+<meta name="author" content="">
+
+<link rel="canonical" href="https://notes.hadir.ga/example/getting-started/">
+
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+
+
+<link rel="shortcut icon" type="image/x-icon" href="https://notes.hadir.ga/images/hadir.ga-favicon.png">
+<link rel="icon" type="image/x-icon" href="https://notes.hadir.ga/images/hadir.ga-favicon.png">
+
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Dosis:400,500,700|Roboto:400,500,700">
+
+<link rel="stylesheet" href="https://notes.hadir.ga/css/custom.css">
+<link rel="stylesheet" href="https://notes.hadir.ga/css/syntax.css">
+<link rel="stylesheet" href="https://notes.hadir.ga/css/application.css">
+<link rel="stylesheet" href="https://notes.hadir.ga/css/temporary.css">
+<link rel="stylesheet" href="https://notes.hadir.ga/css/palettes.css">
+<link rel="stylesheet" href="https://notes.hadir.ga/css/highlight/highlight.css">
+
+<link href="" rel="alternate" type="application/rss+xml" title="Hadir&#39;s Notes | hadir.ga" />
+<link href="" rel="feed" type="application/rss+xml" title="Hadir&#39;s Notes | hadir.ga" />
+
+
+<script src="https://notes.hadir.ga/js/modernizr.js"></script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+</head>
+<body>
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NBL2HMB"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+
+    
+    <div class="backdrop">
+    	<div class="backdrop-paper"></div>
+    </div>
+
+    
+    <input class="toggle" type="checkbox" id="toggle-drawer">
+    <input class="toggle" type="checkbox" id="toggle-search">
+    <label class="toggle-button overlay" for="toggle-drawer"></label>
+
+    <header>
+        <nav aria-label="Header" class="navbar navbar-expand-sm fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="https://notes.hadir.ga/">
+            
+            hadir.ga
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav navbar-nav mr-auto"></ul>
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Notes
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="https://notes.hadir.ga/#machine_learning">Supply Chain</a>
+                        <a class="dropdown-item" href="https://notes.hadir.ga/#deep_learning">Operations Research</a>
+                        <a class="dropdown-item" href="https://notes.hadir.ga/#python">Python</a>
+                        <a class="dropdown-item" href="https://notes.hadir.ga/#statistics">Statistics</a>
+                        <a class="dropdown-item" href="https://notes.hadir.ga/#scala">Scala</a>
+                        <a class="dropdown-item" href="https://notes.hadir.ga/#postgresql">PostgreSQL</a>
+                        <a class="dropdown-item" href="https://notes.hadir.ga/#linux">Command Line</a>
+                        <a class="dropdown-item" href="https://notes.hadir.ga/#regex">Regular Expressions</a>
+                        <a class="dropdown-item" href="https://notes.hadir.ga/#mathematics">Mathematics</a>
+                        <a class="dropdown-item" href="https://notes.hadir.ga/#aws">AWS</a>
+                        <a class="dropdown-item" href="https://notes.hadir.ga/#computer_science">Computer Science</a>
+                    </div>
+                </li>
+
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        About
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="https://notes.hadir.ga/about/hadirga/">About Hadir</a>
+                        <a class="dropdown-item" href="https://github.com/hadirga">GitHub</a>
+                        <a class="dropdown-item" href="https://twitter.com/hadirga">Twitter</a>
+                        <a class="dropdown-item" href="https://www.instagram.com/hadirga/">Instagram</a>
+                        <a class="dropdown-item" href="https://www.linkedin.com/in/hadirga/">Linkedin</a>
+                        <a class="dropdown-item" href="https://www.facebook.com/hadirga/">Facebook</a>
+                        <a class="dropdown-item" href="https://www.gitlab.com/hadirga/">GitLab</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    </header>
+
+
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                
+<article>
+  <div class="page">
+    <div class="content">
+      
+
+<h2 id="installation">Installation</h2>
+
+<h3 id="installing-hugo">Installing Hugo</h3>
+
+<p>Hugo itself is just a single binary without dependencies on expensive runtimes like Ruby, Python or PHP and without dependencies on any databases. You just need to download the <a href="https://github.com/spf13/hugo/releases">latest version</a>. For more information read the official <a href="http://gohugo.io/overview/installing/">installation guides</a>.</p>
+
+<p>Let&rsquo;s make sure Hugo is set up as expected. You should see a similar version number in your terminal:</p>
+
+<pre><code class="language-sh">hugo version
+# Hugo Static Site Generator v0.15 BuildDate: 2016-01-03T12:47:47+01:00
+</code></pre>
+
+<h3 id="installing-material">Installing Material</h3>
+
+<p>Next, assuming you have Hugo up and running the <code>hugo-material-docs</code> theme can be installed with <code>git</code>:</p>
+
+<pre><code class="language-sh"># create a new Hugo website
+hugo new site my-awesome-docs
+
+# move into the themes folder of your website
+cd my-awesome-docs/themes/
+
+# download the theme
+git clone git@github.com:digitalcraftsman/hugo-material-docs.git
+</code></pre>
+
+<h2 id="setup">Setup</h2>
+
+<p>Next, take a look in the <code>exampleSite</code> folder at <code>themes/hugo-material-docs/</code>. This directory contains an example config file and the content that you are currently reading. It serves as an example setup for your documentation.</p>
+
+<p>Copy at least the <code>config.toml</code> in the root directory of your website. Overwrite the existing config file if necessary.</p>
+
+<p>Hugo includes a development server, so you can view your changes as you go -
+very handy. Spin it up with the following command:</p>
+
+<pre><code class="language-sh">hugo server
+</code></pre>
+
+<p>Now you can go to <a href="http://localhost:1313">localhost:1313</a> and the Material
+theme should be visible. You can now start writing your documentation, or read
+on and customize the theme through some options.</p>
+
+<h2 id="configuration">Configuration</h2>
+
+<p>Before you are able to deploy your documentation you should take a few minute to adjust some information in the <code>config.toml</code>. Open the file in an editor:</p>
+
+<pre><code class="language-toml">baseurl = &quot;https://example.com/&quot;
+languageCode = &quot;en-us&quot;
+title = &quot;Material Docs&quot;
+
+[params]
+  # General information
+  author = &quot;Digitalcraftsman&quot;
+  description = &quot;A material design theme for documentations.&quot;
+  copyright = &quot;Released under the MIT license&quot;
+</code></pre>
+
+<h2 id="options">Options</h2>
+
+<h3 id="github-integration">Github integration</h3>
+
+<p>If your project is hosted on GitHub, add the repository link to the
+configuration. If the <code>provider</code> equals <strong>GitHub</strong>, the Material theme will
+add a download and star button, and display the number of stars:</p>
+
+<pre><code class="language-toml">[params]
+  # Repository
+  provider = &quot;GitHub&quot;
+  repo_url = &quot;https://github.com/digitalcraftsman/hugo-material-docs&quot;
+</code></pre>
+
+<h3 id="adding-a-version">Adding a version</h3>
+
+<p>In order to add the current version next to the project banner inside the
+drawer, you can set the variable <code>version</code>:</p>
+
+<pre><code class="language-toml">[params]
+  version = &quot;1.0.0&quot;
+</code></pre>
+
+<p>This will also change the link behind the download button to point to the
+archive with the respective version on GitHub, assuming a release tagged with
+this exact version identifier.</p>
+
+<h3 id="adding-a-logo">Adding a logo</h3>
+
+<p>If your project has a logo, you can add it to the drawer/navigation by defining
+the variable <code>logo</code>. Ideally, the image of your logo should have
+rectangular shape with a minimum resolution of 128x128 and leave some room
+towards the edges. The logo will also be used as a web application icon on iOS.
+Either save your logo somewhere in the <code>static/</code> folder and reference the file relative to this location or use an external URL:</p>
+
+<pre><code class="language-toml">[params]
+  logo = &quot;images/logo.png&quot;
+</code></pre>
+
+<h3 id="adding-a-custom-favicon">Adding a custom favicon</h3>
+
+<p>Favicons are small small icons that are displayed in the tabs right next to the title of the current page. As with the logo above you need to save your favicon in <code>static/</code> and link it relative to this folder or use an external URL:</p>
+
+<pre><code class="language-toml">[params]
+  favicon = &quot;favicon.ico&quot;
+</code></pre>
+
+<h3 id="google-analytics">Google Analytics</h3>
+
+<p>You can enable Google Analytics by replacing <code>UA-XXXXXXXX-X</code> with your own tracking code.</p>
+
+<pre><code class="language-toml">googleAnalytics = &quot;UA-XXXXXXXX-X&quot;
+</code></pre>
+
+<h3 id="small-tweaks">Small tweaks</h3>
+
+<p>This theme provides a simple way for making small adjustments, that is changing
+some margins, centering text, etc. The <code>custom_css</code> and <code>custom_js</code> option allow you to add further CSS and JS files. They can either reside locally in the <code>/static</code> folder or on an external server, e.g. a CDN. In both cases use either the relative path to <code>/static</code> or the absolute URL to the external ressource.</p>
+
+<pre><code class="language-toml">[params]
+  # Custom assets
+  custom_css = [
+    &quot;foo.css&quot;,
+    &quot;bar.css&quot;
+  ]
+
+  custom_js  = [&quot;buzz.js&quot;]
+</code></pre>
+
+<h3 id="changing-the-color-palette">Changing the color palette</h3>
+
+<p>Material defines a default hue for every primary and accent color on Google&rsquo;s
+material design [color palette][]. This makes it very easy to change the overall look of the theme. Just set the variables <code>palette.primary</code> and <code>palette.accent</code> to one of the colors defined in the palette:</p>
+
+<pre><code class="language-toml">[params.palette]
+  primary = &quot;red&quot;
+  accent  = &quot;light-green&quot;
+</code></pre>
+
+<p>Color names can be written upper- or lowercase but must match the names of the
+material design <a href="http://www.materialui.co/colors">color palette</a>. Valid values are: <em>red</em>, <em>pink</em>, <em>purple</em>, <em>deep purple</em>, <em>indigo</em>, <em>blue</em>, <em>light-blue</em>, <em>cyan</em>, <em>teal</em>, <em>green</em>, <em>light-green</em>,
+<em>lime</em>, <em>yellow</em>, <em>amber</em>, <em>orange</em>, <em>deep-orange</em>, <em>brown</em>, <em>grey</em> and
+<em>blue-grey</em>. The last three colors can only be used as a primary color.</p>
+
+<p><img src="/images/colors.png" alt="Color palette" /></p>
+
+<p>If the color is set via this configuration, an additional CSS file called
+<code>palettes.css</code> is included that defines the color palettes.</p>
+
+<h3 id="changing-the-font-family">Changing the font family</h3>
+
+<p>Material uses the <a href="http://font.ubuntu.com">Ubuntu font family</a> by default, specifically the regular sans-serif type for text and the monospaced type for code. Both fonts are loaded from <a href="https://www.google.com/fonts">Google Fonts</a> and can be easily changed to other fonts, like for example Google&rsquo;s own <a href="https://www.google.com/fonts/specimen/Roboto">Roboto font</a>:</p>
+
+<pre><code class="language-toml">[params.font]
+  text = &quot;Roboto&quot;
+  code = &quot;Roboto Mono&quot;
+</code></pre>
+
+<p>The text font will be loaded in font-weights 400 and <strong>700</strong>, the monospaced
+font in regular weight.</p>
+
+<h3 id="syntax-highlighting">Syntax highlighting</h3>
+
+<p>This theme uses the popular <a href="https://highlightjs.org/">Highlight.js</a> library to colorize code examples. The default theme is called <code>Github</code> with a few small tweaks. You can link our own theme if you like. Again, store your stylesheet in the <code>static/</code> folder and set the relative path in the config file:</p>
+
+<pre><code class="language-toml">[params]
+  # Syntax highlighting theme
+  highlight_css  = &quot;path/to/theme.css&quot;
+</code></pre>
+
+<h3 id="adding-a-github-and-twitter-account">Adding a GitHub and Twitter account</h3>
+
+<p>If you have a GitHub and/or Twitter account, you can add links to your
+accounts to the drawer by setting the variables <code>github</code> and
+<code>twitter</code> respectively:</p>
+
+<pre><code class="language-toml">[social]
+  twitter = &quot;&quot;
+  github  = &quot;digitalcraftsman&quot;
+</code></pre>
+
+<h3 id="adding-menu-entries">Adding menu entries</h3>
+
+<p>Once you created your first content files you can link them manually in the sidebar on the left. A menu entry has the following schema:</p>
+
+<pre><code class="language-toml">[[menu.main]]
+  name   = &quot;Material&quot;
+  url    = &quot;/&quot;
+  weight = 0
+  pre    = &quot;&quot;
+</code></pre>
+
+<p><code>name</code> is the title displayed in the menu and <code>url</code> the relative URL to the content. The <code>weight</code> attribute allows you to modify the order of the menu entries. A menu entry appears further down the more weight you add. The <code>pre</code> attribute is optional and allows you to *pre*pend elements to a menu link, e.g. an icon.</p>
+
+<p>Instead of just linking a single file you can enhance the sidebar by creating a nested menu. This way you can list all pages of a section instead of linking them one by one (without nesting).</p>
+
+<p>You need extend the frontmatter of each file content file in a section slightly. The snippet below registers this content file as &lsquo;child&rsquo; of a menu entry that already exists.</p>
+
+<pre><code class="language-yaml">menu:
+  main:
+    parent: Material
+    identifier: &lt;link name&gt;
+    weight: 0
+</code></pre>
+
+<p><code>main</code> specifies to which menu the content file should be added. <code>main</code> is the only menu in this theme by default. <code>parent</code> let&rsquo;s you register this content file to an existing menu entry, in this case the <code>Material</code> link. Note that the parent in the frontmatter needs to match the name in <code>config.toml</code>.</p>
+
+<p><code>identifier</code> is the link that is shown in the menu. Ideally you choose the same name for the <code>identifier</code> and the <code>title</code> of the page. Again, <code>weight</code> allows you to change the order of the nested links in a section.</p>
+
+<h3 id="markdown-extensions">Markdown extensions</h3>
+
+<p>Hugo uses <a href="https://github.com/russross/blackfriday">Blackfriday</a> to process your content. For a detailed description of all options take a look at the <a href="http://gohugo.io/overview/configuration/#configure-blackfriday-rendering">Blackfriday configuration</a> section in the Hugo documentation.</p>
+
+<pre><code class="language-toml">[blackfriday]
+  smartypants = true
+  fractions = true
+  smartDashes = true
+  plainIDAnchors = true
+</code></pre>
+
+    </div>
+  </div>
+</article>
+
+            </div>
+        </div>
+    </div>
+
+    
+
+    <footer class="footer text-center">
+        <div class="container">
+        <span class="text-muted">This project contains 10 pages and is available on <a href="https://github.com/hadirga/notes">GitHub</a>. Copyright &copy; hadir.ga, <time datetime="2018">2018</time>.</span>
+</div>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

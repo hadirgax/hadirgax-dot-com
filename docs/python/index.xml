@@ -6,14 +6,24 @@
     <description>Recent content in Pythons on Hadir&#39;s Notes | hadir.ga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Tue, 30 Oct 2018 01:07:18 -0300</lastBuildDate>
     
 	<atom:link href="https://notes.hadir.ga/python/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title></title>
+      <title>Classes</title>
+      <link>https://notes.hadir.ga/python/basics/classes/</link>
+      <pubDate>Tue, 30 Oct 2018 01:07:18 -0300</pubDate>
+      
+      <guid>https://notes.hadir.ga/python/basics/classes/</guid>
+      <description> Basic content about classes in Python </description>
+    </item>
+    
+    <item>
+      <title>Anaconda Configuration</title>
       <link>https://notes.hadir.ga/python/anaconda/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 20 Dec 2017 11:53:49 -0700</pubDate>
       
       <guid>https://notes.hadir.ga/python/anaconda/</guid>
       <description>Create a virtual environment To create new python a virtual environment in an specific folder and with an specific python version:

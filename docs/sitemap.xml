@@ -3,33 +3,58 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://notes.hadir.ga/example/getting-started/</loc>
+    <lastmod>2016-03-09T00:11:02+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://notes.hadir.ga/example/adding-content/</loc>
+    <lastmod>2016-03-09T19:56:50+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://notes.hadir.ga/example/roadmap/</loc>
+    <lastmod>2016-03-09T20:08:11+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://notes.hadir.ga/example/license/</loc>
+    <lastmod>2016-03-09T20:10:46+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://notes.hadir.ga/python/basics/classes/</loc>
+    <lastmod>2018-10-30T01:07:18-03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://notes.hadir.ga/</loc>
-    <lastmod>2016-03-08T21:07:13+01:00</lastmod>
+    <lastmod>2018-10-29T21:07:13+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://notes.hadir.ga/example/</loc>
-    <lastmod>2016-03-08T21:07:13+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://notes.hadir.ga/linux_ubuntu/virtualbox/</loc>
-  </url>
-  
-  <url>
-    <loc>https://notes.hadir.ga/linux_ubuntu/add-new-repository/</loc>
-  </url>
-  
-  <url>
-    <loc>https://notes.hadir.ga/linux_ubuntu/installation-files-/</loc>
-  </url>
-  
-  <url>
-    <loc>https://notes.hadir.ga/linux_ubuntu/postgresql/</loc>
+    <loc>https://notes.hadir.ga/linux-ubuntu/add-new-repository/</loc>
+    <lastmod>2017-12-20T11:53:49-07:00</lastmod>
   </url>
   
   <url>
     <loc>https://notes.hadir.ga/python/anaconda/</loc>
+    <lastmod>2017-12-20T11:53:49-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://notes.hadir.ga/linux-ubuntu/installation-files-/</loc>
+    <lastmod>2017-12-20T11:53:49-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://notes.hadir.ga/linux-ubuntu/postgresql/</loc>
+    <lastmod>2017-12-20T11:53:49-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://notes.hadir.ga/linux-ubuntu/virtualbox/</loc>
+    <lastmod>2017-12-20T11:53:49-07:00</lastmod>
   </url>
   
   <url>
@@ -38,12 +63,20 @@
   </url>
   
   <url>
-    <loc>https://notes.hadir.ga/linux_ubuntu/</loc>
+    <loc>https://notes.hadir.ga/example/</loc>
+    <lastmod>2016-03-09T00:11:02+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://notes.hadir.ga/linux-ubuntu/</loc>
+    <lastmod>2017-12-20T11:53:49-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://notes.hadir.ga/python/</loc>
+    <lastmod>2018-10-30T01:07:18-03:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="no-js ie6"><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8"><![endif]-->
+<!--[if IE 9 ]><html class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html class="no-js"><!--<![endif]-->
+<head {{ with .Site.LanguageCode }}lang="{{ . }}"{{ end }}>
+    {{ partial "head-meta.html" . }}
+    {{ partial "head" . }}
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NBL2HMB"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- back setions | |   || -->
+    <div class="backdrop">
+    	<div class="backdrop-paper"></div>
+    </div>
+
+    <!-- Active toogle bottom [≡] -->
+    <input class="toggle" type="checkbox" id="toggle-drawer">
+    <input class="toggle" type="checkbox" id="toggle-search">
+    <label class="toggle-button overlay" for="toggle-drawer"></label>
+
+    <header>
+        {{ partial "header" . }}
+    </header>
+
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                {{ block "main" . }}
+                <!-- The part of the page that begins to differ between templates -->
+                {{ end }}
+            </div>
+        </div>
+    </div>
+
+    <!-- start of footer section -->
+
+    <footer class="footer text-center">
+        {{ partial "footer" . }}
+    </footer>
+
+    {{ partial "footer_js"}}
+
+</body>
+</html>

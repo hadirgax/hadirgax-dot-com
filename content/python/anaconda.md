@@ -1,5 +1,13 @@
-Create a virtual environment
-----------------------------
+---
+title: "Anaconda Configuration"
+author: "Hadir Garcia-Castro"
+date: 2017-12-20T11:53:49-07:00
+description: "Anaconda distribution configuration."
+type: technical_note
+draft: false
+---
+
+# Create a virtual environment
 To create new python a virtual environment in an specific folder and with an specific python version:
 
 .. code-block:: bash
