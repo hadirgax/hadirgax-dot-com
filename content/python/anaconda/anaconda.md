@@ -4,6 +4,7 @@ author: "Hadir Garcia-Castro"
 date: 2017-12-20T11:53:49-07:00
 description: "Anaconda distribution configuration."
 type: technical_note
+layout: Anaconda
 draft: false
 ---
 

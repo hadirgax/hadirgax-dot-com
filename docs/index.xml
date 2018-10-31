@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>homepage on Hadir&#39;s Notes | hadir.ga</title>
+    <title>Supply Chain &amp; Operations Research on Hadir&#39;s Notes | hadir.ga</title>
     <link>https://notes.hadir.ga/</link>
-    <description>Recent content in homepage on Hadir&#39;s Notes | hadir.ga</description>
+    <description>Recent content in Supply Chain &amp; Operations Research on Hadir&#39;s Notes | hadir.ga</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 29 Oct 2018 21:07:13 +0100</lastBuildDate>
@@ -79,10 +79,10 @@ add-apt-repository &#39;deb http://apt.postgresql.org/pub/repos/apt/ bionic-pgdg
     
     <item>
       <title>Anaconda Configuration</title>
-      <link>https://notes.hadir.ga/python/anaconda/</link>
+      <link>https://notes.hadir.ga/python/anaconda/anaconda/</link>
       <pubDate>Wed, 20 Dec 2017 11:53:49 -0700</pubDate>
       
-      <guid>https://notes.hadir.ga/python/anaconda/</guid>
+      <guid>https://notes.hadir.ga/python/anaconda/anaconda/</guid>
       <description>Create a virtual environment To create new python a virtual environment in an specific folder and with an specific python version:
 .. code-block:: bash conda create -p ~/pyenvs/djenv35 python=3.5 or python to install the same version installed with conda
 To create the environment into the default anaconda&amp;rsquo;s :bash:&amp;lsquo;env&amp;rsquo; folder

@@ -5,12 +5,15 @@
 /* -------------- */
 
 :root {
+    /* fonts */
     --font-headers: 'Dosis';
     --font-body: 'Roboto';
     --font-code: 'Consolas';
+
+    /* colors */
+    --color-green: #39b54a;
+    --color-black: #10122b;
 }
-
-
 
 /* ---------------------------------------------------------
 /* Computer Modern font
@@ -139,7 +142,7 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
-  color: #505050;
+  color: var(--color-black);
   font-family: var(--font-body), sans-serif;
 }
 .footer {
@@ -158,7 +161,7 @@ Basic page styling
 /* Not required for template or sticky footer method. */
 
 body > .container {
-  padding: 80px 15px 0;
+  padding: 70px 15px 0;
 }
 
 .footer > .container {
@@ -167,7 +170,7 @@ body > .container {
 }
 
 a {
-  color: #0046B7;
+  color: var(--color-green);
 }
 
 a:hover {
@@ -196,27 +199,30 @@ Navbar
 ---------------------------------------------------------*/
 
 .navbar {
-  background-color: #10122b;
+  background-color: #ffffff;
   border-bottom: 0px;
 }
 
 .navbar .navbar-brand, .navbar .navbar-brand:hover {
-  color: #fff;
-  letter-spacing: 1px;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: .9em;
+    display: table-cell;
+    padding-right:12px
+}
+
+.navbar .navbar-brand, img {
+    display: block;
+    width: 160px;
+    height: 56px;
 }
 
 .navbar-nav > li > a {
-  color: #fff;
+  color: #10122b;
   text-transform: uppercase;
-  font-size: .8em;
+  font-size: 0.8em;
   font-weight: 500;
 }
 
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#10122b' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
 }
 
 /* ---------------------------------------------------------
@@ -252,7 +258,7 @@ Homepage
 }
 
 .homepage h3.category_header {
-  background-color: #f7f6f6;
+  background-color: #ffffff;
   color: rgb(84, 84, 84);
   padding: 10px 20px 10px 20px;
   border: solid 1px #e6e6e6;
@@ -286,7 +292,7 @@ Homepage cards
 }
 
 .homepage .card-header {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: var(--color-green);
 }
 
 .homepage .card-body ul{

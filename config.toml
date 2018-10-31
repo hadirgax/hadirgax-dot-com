@@ -4,29 +4,29 @@ title = "Hadir's Notes | hadir.ga"
 languageCode = "en-us"
 copiright = "MIT License"
 
-
 theme = "hadirga"
 
 publishDir = "docs"
+pluralizelisttitles = false
 
 googleAnalytics = "GTM-NBL2HMB"
 
 [params]
   # General information
-  homepage = "https://hadir.ga"
-  description = "My technical notes on Supply Chain, Operations Research & Programming Languages."
+  homepage = "https://notes.hadir.ga/"
+  description = "My technical notes on Supply Chain & Operations Research."
 
   version = "0.1.0"
-  logo = "images/notes.hadir.ga-logo.png"
-  favicon = "images/hadir.ga-favicon.png"
+  logo = "images/hadir-logo.png"
+  favicon = "images/hadir-favicon.png"
 
 	permalink = "#"
 	google_verify_meta = "IYAUkSAAFbNKrdPe-9M1BNoyy8bJi7pwYoP1lPJeJrw"
 
 
   [params.palette]
-    primary = "#10122b"
-    accent  = "#39b54a"
+    black = "#10122b"
+    green  = "#39b54a"
 
   [params.font]
     # if changed herem remember to change at .css files or use SCSS template.
@@ -41,7 +41,6 @@ googleAnalytics = "GTM-NBL2HMB"
   gitlab = "hadirga"
   instagram = "hadir.ga"
   linkedin = "hadirga"
-	skype = "keopsh"
 	twitter = "hadirga"
 	whatsapp = "+5511986746209"
 
