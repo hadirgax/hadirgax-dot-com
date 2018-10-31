@@ -287,12 +287,17 @@ Homepage cards
 ---------------------------------------------------------*/
 
 .homepage .card{
-  border-radius: 0rem;
+  border-radius: 2rem;
+  border: none;
   margin-bottom: 20px;
+  box-shadow:0 1.5px 3px rgba(0,0,0,.24),0 3px 8px rgba(0,0,0,.05)
 }
 
 .homepage .card-header {
   background-color: var(--color-green);
+  color: #ffffff
+  border: none
+  box-shadow:0 1.5px 3px rgba(0,0,0,.24),0 3px 8px rgba(0,0,0,.05)
 }
 
 .homepage .card-body ul{
