@@ -1,6 +1,6 @@
 baseURL = "https://notes.hadir.ga/"
 author = "Hadir Garcia-Castro"
-title = "Hadir's Notes | hadir.ga"
+title = "Hadir's Notes"
 languageCode = "en-us"
 copiright = "MIT License"
 
@@ -17,8 +17,8 @@ googleAnalytics = "GTM-NBL2HMB"
   description = "My technical notes on Supply Chain & Operations Research."
 
   version = "0.1.0"
-  logo = "images/hadir-logo.png"
-  favicon = "images/hadir-favicon.png"
+  logo = "/images/hadir-logo.png"
+  favicon = "/images/hadir-favicon.png"
 
 	permalink = "#"
 	google_verify_meta = "IYAUkSAAFbNKrdPe-9M1BNoyy8bJi7pwYoP1lPJeJrw"

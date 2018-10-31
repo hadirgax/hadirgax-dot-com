@@ -4,7 +4,7 @@
 {{ end }}
 
 
-<title>{{ .Title }}{{ if not .IsHome }} - {{ .Site.Title }}{{ end }}</title>
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
 
 {{ $description := .Site.Params.description }}
 <meta name="description" content="{{ $description }}">
