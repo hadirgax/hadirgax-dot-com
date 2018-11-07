@@ -23,6 +23,16 @@
   </url>
   
   <url>
+    <loc>https://notes.hadir.ga/wordpress/solving-the-err_too_many_redirects-error/</loc>
+    <lastmod>2018-11-06T18:30:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://notes.hadir.ga/wordpress/change-site-url/</loc>
+    <lastmod>2018-11-06T18:25:48+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://notes.hadir.ga/python/basics/classes/</loc>
     <lastmod>2018-10-30T01:07:18-03:00</lastmod>
   </url>
@@ -30,6 +40,11 @@
   <url>
     <loc>https://notes.hadir.ga/</loc>
     <lastmod>2018-10-29T21:07:13+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://notes.hadir.ga/julia/working-with-dates-and-time-functions/</loc>
+    <lastmod>2018-10-22T16:32:58+00:00</lastmod>
   </url>
   
   <url>
@@ -58,6 +73,14 @@
   </url>
   
   <url>
+    <loc>https://notes.hadir.ga/julia/read-write-files-in-julia/</loc>
+  </url>
+  
+  <url>
+    <loc>https://notes.hadir.ga/operations-research/tsp-gurobipy/</loc>
+  </url>
+  
+  <url>
     <loc>https://notes.hadir.ga/categories/</loc>
     <priority>0</priority>
   </url>
@@ -69,8 +92,19 @@
   </url>
   
   <url>
+    <loc>https://notes.hadir.ga/julia/</loc>
+    <lastmod>2018-10-22T16:32:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://notes.hadir.ga/linux-ubuntu/</loc>
     <lastmod>2017-12-20T11:53:49-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://notes.hadir.ga/operations-research/</loc>
     <priority>0</priority>
   </url>
   
@@ -82,6 +116,12 @@
   
   <url>
     <loc>https://notes.hadir.ga/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://notes.hadir.ga/wordpress/</loc>
+    <lastmod>2018-11-06T18:30:48+00:00</lastmod>
     <priority>0</priority>
   </url>
   

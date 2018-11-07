@@ -55,12 +55,42 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
     </item>
     
     <item>
+      <title>Solving the `ERR_TOO_MANY_REDIRECTS` error</title>
+      <link>https://notes.hadir.ga/wordpress/solving-the-err_too_many_redirects-error/</link>
+      <pubDate>Tue, 06 Nov 2018 18:30:48 +0000</pubDate>
+      
+      <guid>https://notes.hadir.ga/wordpress/solving-the-err_too_many_redirects-error/</guid>
+      <description> Solving the ERR_TOO_MANY_REDIRECTS error </description>
+    </item>
+    
+    <item>
+      <title>Change site URL</title>
+      <link>https://notes.hadir.ga/wordpress/change-site-url/</link>
+      <pubDate>Tue, 06 Nov 2018 18:25:48 +0000</pubDate>
+      
+      <guid>https://notes.hadir.ga/wordpress/change-site-url/</guid>
+      <description>Change site URL If the fields are disabled To change the WordPress home address or Site URL, however the fields are disable to be edited. Then find the wp-config.php file via FTP and open up it. Look for the WP_HOME or WP_SITEURL fields and erase them to enable the files in the WP panel again. If they [the fileds] do not exist and you want to disable them, then write the following lines at the end of the file:</description>
+    </item>
+    
+    <item>
       <title>Classes</title>
       <link>https://notes.hadir.ga/python/basics/classes/</link>
       <pubDate>Tue, 30 Oct 2018 01:07:18 -0300</pubDate>
       
       <guid>https://notes.hadir.ga/python/basics/classes/</guid>
       <description> Basic content about classes in Python </description>
+    </item>
+    
+    <item>
+      <title>Working with dates and time functions</title>
+      <link>https://notes.hadir.ga/julia/working-with-dates-and-time-functions/</link>
+      <pubDate>Mon, 22 Oct 2018 16:32:58 +0000</pubDate>
+      
+      <guid>https://notes.hadir.ga/julia/working-with-dates-and-time-functions/</guid>
+      <description>Working with dates and time functions Examples of date/time functions in Julia.
+Preliminaries Load the required packages (if not installed or not updated), it is not necessary to execute every time.
+#In using Pkg Pkg.add(&amp;quot;Dates&amp;quot;) #Out  [32m[1m Resolving[22m[39m package versions... [32m[1m Updating[22m[39m `C:\Users\Hadir Castro\.julia\environments\v1.0\Project.toml` [90m [no changes][39m [32m[1m Updating[22m[39m `C:\Users\Hadir Castro\.julia\environments\v1.0\Manifest.toml` [90m [no changes][39m  Call the &amp;lsquo;Dates&amp;rsquo; package.
+#In using Dates  now() function A simple function that returns the just now time in &#39;YYYY-MM-DDTHH:mm:ss.</description>
     </item>
     
     <item>
@@ -122,6 +152,26 @@ $ sudo -i -u postgres  So you can access to the prompt :bash:&amp;lsquo;$ psql&a
       <guid>https://notes.hadir.ga/linux-ubuntu/virtualbox/</guid>
       <description>Install Guest Additions on Ubuntu  Click on Install Guest Additions… from the Devices menu, then choose to browse the content of the CD when requested. Check if sudo is installed, otherwise install it. bash su - password: apt-get install sudo -y usermod -aG sudo yourusername sudo apt-get install linux-headers-amd64 `  if it is not running, then install gcc :bash:&amp;lsquo;sudo apt-get install build-essential gcc make perl&amp;rsquo;
  Run :bash:&amp;ldquo;sudo sh /media/your_username/VBoxLinuxAdditions.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://notes.hadir.ga/julia/read-write-files-in-julia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.hadir.ga/julia/read-write-files-in-julia/</guid>
+      <description>?open  search: [0m[1mo[22m[0m[1mp[22m[0m[1me[22m[0m[1mn[22m is[0m[1mo[22m[0m[1mp[22m[0m[1me[22m[0m[1mn[22m pr[0m[1mo[22m[0m[1mp[22m[0m[1me[22mrty[0m[1mn[22mames C[0m[1mo[22mm[0m[1mp[22mosit[0m[1me[22mExceptio[0m[1mn[22m [0m[1mo[22m[0m[1mp[22m[0m[1me[22mrm getpr[0m[1mo[22m[0m[1mp[22m[0m[1me[22mrty  open(filename::AbstractString; keywords...) -&amp;gt; IOStream  Open a file in a mode specified by five boolean keyword arguments:
+   Keyword Description Default     read open for reading !write   write open for writing truncate \| append   create create if non-existent !read &amp;amp; write \| truncate \| append   truncate truncate to zero size !</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://notes.hadir.ga/operations-research/tsp-gurobipy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://notes.hadir.ga/operations-research/tsp-gurobipy/</guid>
+      <description>--- ## MIP Model for the TSP in Python This is the model for the TSP writed in Python and using Gurobi solver. The model builds the optimal exact route between a set of cities. It has as parameters:  - `inst` an object of type Instance - `soln` an object of type Solution See the model:  Pres Loads the required packages:
+import os from gurobipy import * from datetime import datetime  Imports auxiliary objects:</description>
     </item>
     
   </channel>

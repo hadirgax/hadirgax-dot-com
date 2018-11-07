@@ -35,15 +35,15 @@ if (!doNotTrack) {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
 
-<meta property="og:title" content="Classes" />
-<meta property="og:description" content="Basic content about classes in Python." />
+<meta property="og:title" content="Change site URL" />
+<meta property="og:description" content="Change site URL If the fields are disabled To change the WordPress home address or Site URL, however the fields are disable to be edited. Then find the wp-config.php file via FTP and open up it. Look for the WP_HOME or WP_SITEURL fields and erase them to enable the files in the WP panel again. If they [the fileds] do not exist and you want to disable them, then write the following lines at the end of the file:" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://notes.hadir.ga/python/basics/classes/" /><meta property="article:published_time" content="2018-10-30T01:07:18-03:00"/>
-<meta property="article:modified_time" content="2018-10-30T01:07:18-03:00"/>
+<meta property="og:url" content="https://notes.hadir.ga/wordpress/change-site-url/" /><meta property="article:published_time" content="2018-11-06T18:25:48&#43;00:00"/>
+<meta property="article:modified_time" content="2018-11-06T18:25:48&#43;00:00"/>
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Classes"/>
-<meta name="twitter:description" content="Basic content about classes in Python."/>
+<meta name="twitter:title" content="Change site URL"/>
+<meta name="twitter:description" content="Change site URL If the fields are disabled To change the WordPress home address or Site URL, however the fields are disable to be edited. Then find the wp-config.php file via FTP and open up it. Look for the WP_HOME or WP_SITEURL fields and erase them to enable the files in the WP panel again. If they [the fileds] do not exist and you want to disable them, then write the following lines at the end of the file:"/>
 <meta name="twitter:site" content="@hadirga"/>
 
 
@@ -64,7 +64,7 @@ if (!doNotTrack) {
 
 
 
-<title>Classes - Hadir&#39;s Notes</title>
+<title>Change site URL - Hadir&#39;s Notes</title>
 
 
 <meta name="description" content="My technical notes on Supply Chain &amp; Operations Research.">
@@ -72,7 +72,7 @@ if (!doNotTrack) {
 
 <meta name="author" content="">
 
-<link rel="canonical" href="https://notes.hadir.ga/python/basics/classes/">
+<link rel="canonical" href="https://notes.hadir.ga/wordpress/change-site-url/">
 
 
 
@@ -170,7 +170,17 @@ MathJax.Hub.Config({
     <div class="content">
       
 
-<h1 id="basic-content-about-classes-in-python">Basic content about classes in Python</h1>
+<h1 id="change-site-url">Change site URL</h1>
+
+<h2 id="if-the-fields-are-disabled">If the fields are disabled</h2>
+
+<p>To change the WordPress home address or Site URL, however the fields are disable to be edited. Then find the wp-config.php file via FTP and open up it. Look for the <code>WP_HOME</code> or <code>WP_SITEURL</code> fields and erase them to enable the files in the WP panel again.
+If they [the fileds] do not exist and you want to disable them, then write the following lines at the end of the file:</p>
+
+<pre><code class="language-php">/** WP Home Address **/
+define('WP_HOME','http://example.com');
+define('WP_SITEURL','http://example.com');
+</code></pre>
 
     </div>
   </div>

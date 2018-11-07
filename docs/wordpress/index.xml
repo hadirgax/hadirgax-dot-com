@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wordpress on Hadir&#39;s Notes</title>
+    <link>https://notes.hadir.ga/wordpress/</link>
+    <description>Recent content in Wordpress on Hadir&#39;s Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 06 Nov 2018 18:30:48 +0000</lastBuildDate>
+    
+	<atom:link href="https://notes.hadir.ga/wordpress/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Solving the `ERR_TOO_MANY_REDIRECTS` error</title>
+      <link>https://notes.hadir.ga/wordpress/solving-the-err_too_many_redirects-error/</link>
+      <pubDate>Tue, 06 Nov 2018 18:30:48 +0000</pubDate>
+      
+      <guid>https://notes.hadir.ga/wordpress/solving-the-err_too_many_redirects-error/</guid>
+      <description> Solving the ERR_TOO_MANY_REDIRECTS error </description>
+    </item>
+    
+    <item>
+      <title>Change site URL</title>
+      <link>https://notes.hadir.ga/wordpress/change-site-url/</link>
+      <pubDate>Tue, 06 Nov 2018 18:25:48 +0000</pubDate>
+      
+      <guid>https://notes.hadir.ga/wordpress/change-site-url/</guid>
+      <description>Change site URL If the fields are disabled To change the WordPress home address or Site URL, however the fields are disable to be edited. Then find the wp-config.php file via FTP and open up it. Look for the WP_HOME or WP_SITEURL fields and erase them to enable the files in the WP panel again. If they [the fileds] do not exist and you want to disable them, then write the following lines at the end of the file:</description>
+    </item>
+    
+  </channel>
+</rss>
