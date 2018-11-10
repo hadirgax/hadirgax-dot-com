@@ -12,6 +12,7 @@
 
     /* colors */
     --color-green: #39b54a;
+    --color-green-light: rgba(#39b54a, 0.55);
     --color-black: #10122b;
 }
 
@@ -199,7 +200,7 @@ Navbar
 ---------------------------------------------------------*/
 
 .navbar {
-  background-color: #ffffff;
+  background-color: yellow;
   border-bottom: 0px;
 }
 
