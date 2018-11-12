@@ -1,17 +1,15 @@
 # -*- coding: utf-8 -*-
-# ---------------------------------------------------------
-# Author: HADIR ALEXANDER GARCIA CASTRO
-# Advisor: ANDRÉ BERGSTEN MENDES
-# E-mail: hadir.ga@outlook.com
-# Website: https://hadir.ga/
+# ---------------------------------------
+# AUTHOR: Hadir Garcia-Castro
+# E-MAIL: hadir.garcia@usp.br
+# DATE: March 24th, 2018 - May 13th, 2018
 # Copyright (C) 2018, hadir.ga
 # All rights reserved.
-# Apache License, Version 2.0 (see LICENSE.lic for details)
-# ---------------------------------------------------------
+# MIT License (see LICENSE.lic for details)
+# ---------------------------------------
 
 
-from util import read_file
-from instances import id_filename
+from .util import read_file
 
 class Instance(object):
     def __init__(self):
@@ -26,33 +24,33 @@ class Instance(object):
         self.ncities = 0  # int, Qty of cities 'I' to be visited.
         self.xlng = []  # list of int
         self.ylat = []  # list of int
-       
 
-    def load(self, id):
+
+    def load(self, name):
         """
         The instance data is loaded from the instance's id text file .
-        
+
         Parameters
         ----------
-        id : int
-            It is the number ID of the instance to be processed.
+        name : string
+            It is the name ID of the instance to be processed.
         """
         self.id = id
-        self.name = id_filename[id]
+        self.name = name
         _data = read_file(self.name)
         _row = 6  # the instance data starts at line 6
         self.nnodes = int(_data[3][1])  # Qty of nodes 'V'.
         self.ncities = int(_data[3][1])  # Qty of cities 'I' to be visited.
         self.xlng = [int(_data[_row + i][1]) for i in range(self.nnodes)]
         self.ylat = [int(_data[_row + i][2]) for i in range(self.nnodes)]
-        
+
 
 class Solution(object):
 
     def __init__(self, problem_name, soln_type):
         """
         Empty Solution object with especific 'name' and 'soln_type' values.
-        
+
         Parameters
         ----------
         problem_name: str
