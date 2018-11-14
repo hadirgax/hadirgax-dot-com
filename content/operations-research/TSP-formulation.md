@@ -4,7 +4,7 @@ author: "Hadir Garcia-Castro"
 date: 2018-10-22T16:32:58.713
 description: "Math formulation and algorithms to solve the TSP."
 type: technical_note
-draft: true
+draft: false
 ---
 # The Travel Salesman Problem (TSP)
 
@@ -16,16 +16,14 @@ The math formulation
 ## Math Formulation for the asimetric TSP
 The math formulation
 
-
 ## Starts and Ends at the Same City
 In the case where the salesman starts and ends at the same city, the problem has to new constratins.
 
-[c1]
+(c1)
 $$\sum_{j=1}^{n}{x_{0j}} = 1$$
 
-[c2]
+(c2)
 $$\sum_{j=1}^{n}{x_{0j}} = 1$$
-
 
 ```python
 import os
