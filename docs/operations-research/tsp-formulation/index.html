@@ -35,14 +35,14 @@ if (!doNotTrack) {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
 
-<meta property="og:title" content="An MIP model for the TSP with gurobipy" />
+<meta property="og:title" content="The Travel Salesman Problem (TSP)" />
 <meta property="og:description" content="Math formulation and algorithms to solve the TSP." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://notes.hadir.ga/operations-research/tsp-gurobipy/" /><meta property="article:published_time" content="2018-10-22T16:32:58&#43;00:00"/>
+<meta property="og:url" content="https://notes.hadir.ga/operations-research/tsp-formulation/" /><meta property="article:published_time" content="2018-10-22T16:32:58&#43;00:00"/>
 <meta property="article:modified_time" content="2018-10-22T16:32:58&#43;00:00"/>
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="An MIP model for the TSP with gurobipy"/>
+<meta name="twitter:title" content="The Travel Salesman Problem (TSP)"/>
 <meta name="twitter:description" content="Math formulation and algorithms to solve the TSP."/>
 <meta name="twitter:site" content="@hadirga"/>
 
@@ -64,7 +64,7 @@ if (!doNotTrack) {
 
 
 
-<title>An MIP model for the TSP with gurobipy - Hadir&#39;s Notes</title>
+<title>The Travel Salesman Problem (TSP) - Hadir&#39;s Notes</title>
 
 
 <meta name="description" content="My technical notes on Supply Chain &amp; Operations Research.">
@@ -72,7 +72,7 @@ if (!doNotTrack) {
 
 <meta name="author" content="">
 
-<link rel="canonical" href="https://notes.hadir.ga/operations-research/tsp-gurobipy/">
+<link rel="canonical" href="https://notes.hadir.ga/operations-research/tsp-formulation/">
 
 
 
@@ -169,7 +169,7 @@ MathJax.Hub.Config({
 <article>
   <div class="technical_note">
   <header>
-    <h1 class="technical_note_title">An MIP model for the TSP with gurobipy</h1>
+    <h1 class="technical_note_title">The Travel Salesman Problem (TSP)</h1>
     <div class="technical_note_date">
       <time datetime=" 2018-10-22T16:32:58Z "> 22 Oct 2018</time>
     </div>
@@ -177,61 +177,46 @@ MathJax.Hub.Config({
   <div class="content">
   
 
-<h1 id="an-mip-model-for-the-tsp-with-gurobipy">An MIP model for the TSP with gurobipy</h1>
+<h1 id="the-travel-salesman-problem-tsp">The Travel Salesman Problem (TSP)</h1>
 
-<p>This is the model for the TSP wrote in Python and using the Gurobi solver.
-The model builds the optimal exact route between a set of cities.
-It has as parameters:</p>
+<p>There are two versions of the TSP math formulation based in MIP, the Simetric and asimetric.</p>
 
-<pre><code class="language-python">- `inst` an object of type Instance
-- `soln` an object of type Solution
+<h2 id="math-formulation-for-the-simetric-tsp">Math Formulation for the simetric TSP</h2>
 
-See the model:
-</code></pre>
+<p>The math formulation</p>
 
-<h2 id="preliminaries">preliminaries</h2>
+<h2 id="math-formulation-for-the-asimetric-tsp">Math Formulation for the asimetric TSP</h2>
 
-<p>Loads the required packages:</p>
+<p>The math formulation</p>
+
+<h2 id="starts-and-ends-at-the-same-city">Starts and Ends at the Same City</h2>
+
+<p>In the case where the salesman starts and ends at the same city, the problem has to new constratins.</p>
+
+<p>(c1)
+$$\sum<em>{j=1}^{n}{x</em>{0j}} = 1$$</p>
+
+<p>(c2)
+$$\sum<em>{j=1}^{n}{x</em>{0j}} = 1$$</p>
 
 <pre><code class="language-python">import os
 from gurobipy import *
 from datetime import datetime
-</code></pre>
 
-<p>Imports auxiliary objects:</p>
+from classes import Intance, Solution
+from util import mtx_distance
 
-<pre><code class="language-python">from util.classes import Instance, Solution
-from util.util import mtx_distance
-</code></pre>
-
-<p>And the model&hellip;</p>
-
-<pre><code class="language-python">instance = Instance.load(&quot;lin105.tsp&quot;)
+inst = Instance.load_data()
 soln = Solution('TSP', 'MIP Solution')
 
-n = instance.nnodes  # the number of cities in the problem.
-distance = mtx_distance(instance.xlng, instance.ylat, scale=100)  # Distance btw (i,j)
+# the number of cities in the instance.
+n = inst.nnodes
 
-print(n)
-print(distance)
+# distances between each pair of cities (i,j)
+distance = mtx_distance(inst.xlng, inst.ylat, scale=100)
 </code></pre>
 
-<pre><code>---------------------------------------------------------------------------
-
-TypeError                                 Traceback (most recent call last)
-
-&lt;ipython-input-25-fa6ea7e6eaa8&gt; in &lt;module&gt;()
-----&gt; 1 instance = Instance.load(&quot;lin105.tsp&quot;)
-      2 soln = Solution('TSP', 'MIP Solution')
-      3 
-      4 n = instance.nnodes  # the number of cities in the problem.
-      5 distance = mtx_distance(instance.xlng, instance.ylat, scale=100)  # Distance btw (i,j)
-
-
-TypeError: load() missing 1 required positional argument: 'id'
-</code></pre>
-
-<pre><code class="language-python"># Gurobi model for the TSP
+<pre><code class="language-python"># The Gurobi model for the TSP
 try:
     # Initialize the Traveling Salesman Problem Model
     tsp = Model('TSP')
@@ -263,8 +248,9 @@ try:
         for i in range(n) for j in range(n)
     }
     tsp.update()
+</code></pre>
 
-    # Decision: 1 to include constraints, 0 otherwise
+<pre><code class="language-python">    # Decision: 1 to include constraints, 0 otherwise
     cstr = {'1' : 1,
             '2' : 1,
             '3' : 1,
@@ -272,12 +258,13 @@ try:
             '5' : 1,
             '6' : 1,
             '7' : 1,
-            '8' : 1}
+            '8' : 1
+    }
 
     # CONSTRAINTS 1
     # -------------------------------------------------------
     if cstr['1']:
-        # Ensures that the route starts at beginning customer.
+        # Ensures that the route starts at beginning city.
         i = 0
         expr = LinExpr()
         for j in range(1, n):
@@ -288,7 +275,7 @@ try:
     # CONSTRAINTS 2
     # -------------------------------------------------------
     if cstr['2']:
-        # Ensures that the route ends at beginning customer.
+        # Ensures that the route ends at beginning city.
         j = 0
         expr = LinExpr()
         for i in range(1, n):
@@ -299,7 +286,7 @@ try:
     # CONSTRAINTS 3
     # ---------------------------------------------------
     if cstr['3']:
-        # Ensures that customer 'j' is visited.
+        # Ensures that city 'j' is visited.
         for j in range(1, n):
             expr = LinExpr()
             for i in range(n):
@@ -311,7 +298,7 @@ try:
     # CONSTRAINTS 4
     # ---------------------------------------------------
     if cstr['4']:
-        # Ensures that route exits customer 'j'.
+        # Ensures that route exits city 'j'.
         for i in range(1, n):
             expr = LinExpr()
             for j in range(n):
@@ -379,10 +366,10 @@ try:
     tsp.update()
 
     # Write the '.lp' model file
-    path = os.path.abspath(r'./util/{date}_{id}_{name}.lp'.format(
+    path = os.path.abspath(r'./solution/mip/{date}_{id}_{name}.lp'.format(
         date=datetime.now().strftime('%Y%m%d_%H%M%S'),
-        id=instance.id,
-        name=instance.name))
+        id=inst.id,
+        name=inst.name))
     tsp.write(path)
 
     # Optimize model
@@ -409,77 +396,10 @@ try:
     soln.runtime = tsp.runtime
     soln.gap = tsp.MIPGap
 
+    return soln  # End of TSP
 
 except GurobiError:
     raise Exception('Error reported at Traveling Salesman Problem')
-</code></pre>
-
-<pre><code>Changed value of parameter LazyConstraints to 1
-   Prev: 0  Min: 0  Max: 1  Default: 0
-Changed value of parameter TimeLimit to 100.0
-   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
-Parameter LogToConsole unchanged
-   Value: 1  Min: 0  Max: 1  Default: 1
-Optimize a model with 3 rows, 0 columns and 0 nonzeros
-Coefficient statistics:
-  Matrix range     [0e+00, 0e+00]
-  Objective range  [0e+00, 0e+00]
-  Bounds range     [0e+00, 0e+00]
-  RHS range        [1e+00, 1e+00]
-Presolve time: 0.32s
-
-Solved in 0 iterations and 0.32 seconds
-Infeasible model
-[]
-
-
-
----------------------------------------------------------------------------
-
-AttributeError                            Traceback (most recent call last)
-
-&lt;ipython-input-13-bd89780d5ad8&gt; in &lt;module&gt;()
-    179     soln.status = tsp.status
-    180     soln.sequence = sequence
---&gt; 181     soln.cost_total = tsp.objVal
-    182     soln.runtime = tsp.runtime
-    183     soln.gap = tsp.MIPGap
-
-
-model.pxi in gurobipy.Model.__getattr__ (../../src/python/gurobipy.c:53450)()
-
-
-model.pxi in gurobipy.Model.getAttr (../../src/python/gurobipy.c:68468)()
-
-
-model.pxi in gurobipy.Model.__gettypedattr (../../src/python/gurobipy.c:106359)()
-
-
-AttributeError: b&quot;Unable to retrieve attribute 'objVal'&quot;
-</code></pre>
-
-<p>Running the model:</p>
-
-<pre><code class="language-python">mip_tsp(Instance)
-</code></pre>
-
-<pre><code>---------------------------------------------------------------------------
-
-AttributeError                            Traceback (most recent call last)
-
-&lt;ipython-input-9-8d9d04ca7922&gt; in &lt;module&gt;()
-----&gt; 1 mip_tsp(Instance)
-
-
-&lt;ipython-input-8-4e374f0f04d7&gt; in mip_tsp(instance)
-     13     &quot;&quot;&quot;
-     14 
----&gt; 15     n = instance.nnodes  # the number of cities in the problem.
-     16     distance = mtx_distance(instance.xlng, instance.ylat, scale=100)  # Distance btw (i,j)
-     17 
-
-
-AttributeError: type object 'Instance' has no attribute 'nnodes'
 </code></pre>
 
 </div>

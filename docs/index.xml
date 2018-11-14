@@ -12,12 +12,24 @@
     
     
     <item>
-      <title>Solving the &#39;ERR_TOO_MANY_REDIRECTS&#39; error</title>
+      <title>Math Symbols</title>
+      <link>https://notes.hadir.ga/latex/math-symbols/</link>
+      <pubDate>Sun, 11 Nov 2018 11:00:00 -0700</pubDate>
+      
+      <guid>https://notes.hadir.ga/latex/math-symbols/</guid>
+      <description> Math Symbols in LaTeX To write math symbols and characteres in LaTeX: - use $ ... $ for inline entries. - use $$ ... $$ for centralized block entries.
+Alphabet Characters    Type LaTeX Code Text Result     Normal uppercase $ABCDEFGHIJ$ $ABCDEFGH$   Normal lowercase $abcdefghij$ $abcdefghij$   Numbers $0123456789$ $0123456789$   Mathcal uppercase $\mathcal{ABCDEFGHIJ}$ $\mathcal{ABCDEFGHIJ}$   Mathcal lowercase $\mathcal{abcdefghij}$ $\mathcal{abcdefghij}$   Mathcal Numbers $\mathcal{0123456789}$ $\mathcal{0123456789}$    Greek Alphabet    Name LaTeX Code Text Result     Alpha $A$ $\alpha$ $A$ $\alpha$   Beta $B$ $\beta$ $B$ $\beta$   Gamma $\Gamma$ $\gamma$ $\Gamma$ $\gamma$   Delta $\Delta$ $\delta$ $\Delta$ $\delta$   Epsilon $E$ $\epsilon$ $E$ $\epsilon$   Zeta $Z$ $\zeta$ $Z$ $\zeta$   Eta $E$ $\eta$ $E$ $\eta$   Theta $\Theta$ $\theta$ $\Theta$ $\theta$   Iota $I$ $\iota$ $I$ $\iota$   Kappa $K$ $\kappa$ $K$ $\kappa$   Lambda $\Lambda$ $\lambda$ $\Lambda$ $\lambda$   Mu $M$ $\mu$ $M$ $\mu$   Nu $N$ $\nu$ $N$ $\nu$   Xi $\Xi$ $\xi$ $\Xi$ $\xi$   Omicron $O$ $\omicron$ $O$ $\omicron$   Pi $\Pi$ $\pi$ $\Pi$ $\pi$   Rho $P$ $\rho$ $P$ $\rho$   Sigma $\Sigma$ $\sigma$ $\Sigma$ $\sigma$   Tau $T$ $\tau$ $T$ $\tau$   Upsilon $\Upsilon$ $\upsilon$ $\Upsilon$ $\upsilon$   Phi $Phi$ $\phi$ $Phi$ $\phi$   Chi $X$ $\chi$ $X$ $\chi$   Psi $\Psi$ $\psi$ $\Psi$ $\psi$   Omega $\Omega$ $\omega$ $\Omega$ $\omega$    Comparison    Name LaTeX Code Text Result     Greater than $&amp;gt;$ $&amp;gt;$   Greater than or equal $\geq$ $\geq$   Less than $&amp;lt;$ $&amp;lt;$   Less than or equal $\leq$ $\leq$    Others    Name LaTeX Code Text Result     Cardinality $\|A\vert$ $   Absolute value $\|a\vert$ $   Parenthesis $(x)$ $(x)$   Brackets $[y]$ $[y]$   Braces $\{z\}$ ${z}$    Operators    Name LaTeX Code Text Result     Sum $+$ $+$   Summatory $\sum{x}$ $\sum{x}$   Product $a\cdot b$ $a\cdot b$   Product $a\times b$ $a\times b$    </description>
+    </item>
+    
+    <item>
+      <title>Solving the `ERR_TOO_MANY_REDIRECTS` error</title>
       <link>https://notes.hadir.ga/wordpress/solving-the-err_too_many_redirects-error/</link>
       <pubDate>Tue, 06 Nov 2018 18:30:48 +0000</pubDate>
       
       <guid>https://notes.hadir.ga/wordpress/solving-the-err_too_many_redirects-error/</guid>
-      <description> Solving the ERR_TOO_MANY_REDIRECTS error </description>
+      <description>Solving the ERR_TOO_MANY_REDIRECTS error A kind of ERR_TOO_MANY_REDIRECTS error is when we try to acces the wp-admin page.
+After trying to change the site address using the popular internet solution, add a couple of line into the wp-config.php file:
+/** WP Home Address **/ define(&#39;WP_HOME&#39;,&#39;http://example.com&#39;); define(&#39;WP_SITEURL&#39;,&#39;http://example.com&#39;);  Those lines of code do not work correctly and the solution is to change the address fields directly from database. Follow the steps:</description>
     </item>
     
     <item>
@@ -26,7 +38,18 @@
       <pubDate>Tue, 06 Nov 2018 18:25:48 +0000</pubDate>
       
       <guid>https://notes.hadir.ga/wordpress/change-site-url/</guid>
-      <description>Change site URL If the fields are disabled To change the WordPress home address or Site URL, however the fields are disable to be edited. Then find the wp-config.php file via FTP and open up it. Look for the WP_HOME or WP_SITEURL fields and erase them to enable the files in the WP panel again. If they [the fileds] do not exist and you want to disable them, then write the following lines at the end of the file:</description>
+      <description>Change site URL If the fields are disabled To change the WordPress home address or Site URL, however the fields are disable to be edited. Then find the wp-config.php file via FTP and open up it. Look for the WP_HOME or WP_SITEURL fields and erase them to enable the files in the WP panel again. If they (the fileds) do not exist and you want to disable them, then write the following lines at the end of the file:</description>
+    </item>
+    
+    <item>
+      <title>The .gitignore file</title>
+      <link>https://notes.hadir.ga/git/gitignore-file/</link>
+      <pubDate>Wed, 31 Oct 2018 22:36:29 +0000</pubDate>
+      
+      <guid>https://notes.hadir.ga/git/gitignore-file/</guid>
+      <description>The .gitignore file This file allows to ignore/untrack the specified files and folders. To creates a .gitignore file, open you prefered text editor and saves a new file with the name .gitignore into the folder to be tracked by Git.
+To ignoring files/folders, do write the following comands in the .gitignore file previously created:
+Ignoring a folder Starts the line writing * followed by / and then the name of the folder to be ignored.</description>
     </item>
     
     <item>
@@ -36,6 +59,85 @@
       
       <guid>https://notes.hadir.ga/python/basics/classes/</guid>
       <description> Basic content about classes in Python </description>
+    </item>
+    
+    <item>
+      <title>Procurement</title>
+      <link>https://notes.hadir.ga/supply-chain/procurement/</link>
+      <pubDate>Sat, 27 Oct 2018 15:28:21 -0300</pubDate>
+      
+      <guid>https://notes.hadir.ga/supply-chain/procurement/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Transportation</title>
+      <link>https://notes.hadir.ga/supply-chain/transportation/</link>
+      <pubDate>Sat, 27 Oct 2018 15:27:57 -0300</pubDate>
+      
+      <guid>https://notes.hadir.ga/supply-chain/transportation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Logistics</title>
+      <link>https://notes.hadir.ga/supply-chain/logistics/</link>
+      <pubDate>Sat, 27 Oct 2018 15:27:41 -0300</pubDate>
+      
+      <guid>https://notes.hadir.ga/supply-chain/logistics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Euclidean_geometry</title>
+      <link>https://notes.hadir.ga/mathematics/euclidean-geometry/</link>
+      <pubDate>Sat, 27 Oct 2018 15:26:11 -0300</pubDate>
+      
+      <guid>https://notes.hadir.ga/mathematics/euclidean-geometry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Me</title>
+      <link>https://notes.hadir.ga/about/me/</link>
+      <pubDate>Wed, 24 Oct 2018 14:09:42 -0300</pubDate>
+      
+      <guid>https://notes.hadir.ga/about/me/</guid>
+      <description>This is a file with informations about me.</description>
+    </item>
+    
+    <item>
+      <title>An MIP model for the TSP with gurobipy</title>
+      <link>https://notes.hadir.ga/operations-research/tsp-gurobipy/</link>
+      <pubDate>Mon, 22 Oct 2018 16:32:58 +0000</pubDate>
+      
+      <guid>https://notes.hadir.ga/operations-research/tsp-gurobipy/</guid>
+      <description>An MIP model for the TSP with gurobipy This is the model for the TSP wrote in Python and using the Gurobi solver. The model builds the optimal exact route between a set of cities. It has as parameters:
+- `inst` an object of type Instance - `soln` an object of type Solution See the model:  preliminaries Loads the required packages:
+import os from gurobipy import * from datetime import datetime  Imports auxiliary objects:</description>
+    </item>
+    
+    <item>
+      <title>Read-write-files-in-julia</title>
+      <link>https://notes.hadir.ga/julia/read-write-files-in-julia/</link>
+      <pubDate>Mon, 22 Oct 2018 16:32:58 +0000</pubDate>
+      
+      <guid>https://notes.hadir.ga/julia/read-write-files-in-julia/</guid>
+      <description>?open  search: [0m[1mo[22m[0m[1mp[22m[0m[1me[22m[0m[1mn[22m is[0m[1mo[22m[0m[1mp[22m[0m[1me[22m[0m[1mn[22m pr[0m[1mo[22m[0m[1mp[22m[0m[1me[22mrty[0m[1mn[22mames C[0m[1mo[22mm[0m[1mp[22mosit[0m[1me[22mExceptio[0m[1mn[22m [0m[1mo[22m[0m[1mp[22m[0m[1me[22mrm getpr[0m[1mo[22m[0m[1mp[22m[0m[1me[22mrty  open(filename::AbstractString; keywords...) -&amp;gt; IOStream  Open a file in a mode specified by five boolean keyword arguments:
+   Keyword Description Default     read open for reading !write   write open for writing truncate \| append   create create if non-existent !read &amp;amp; write \| truncate \| append   truncate truncate to zero size !</description>
+    </item>
+    
+    <item>
+      <title>The Travel Salesman Problem (TSP)</title>
+      <link>https://notes.hadir.ga/operations-research/tsp-formulation/</link>
+      <pubDate>Mon, 22 Oct 2018 16:32:58 +0000</pubDate>
+      
+      <guid>https://notes.hadir.ga/operations-research/tsp-formulation/</guid>
+      <description>The Travel Salesman Problem (TSP) There are two versions of the TSP math formulation based in MIP, the Simetric and asimetric.
+Math Formulation for the simetric TSP The math formulation
+Math Formulation for the asimetric TSP The math formulation
+Starts and Ends at the Same City In the case where the salesman starts and ends at the same city, the problem has to new constratins.
+(c1) $$\sum{j=1}^{n}{x{0j}} = 1$$</description>
     </item>
     
     <item>
@@ -112,23 +214,15 @@ $ sudo -i -u postgres  So you can access to the prompt :bash:&amp;lsquo;$ psql&a
     </item>
     
     <item>
-      <title></title>
-      <link>https://notes.hadir.ga/julia/read-write-files-in-julia/</link>
+      <title>Parallelism-basics</title>
+      <link>https://notes.hadir.ga/julia/parallelism-basics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.hadir.ga/julia/read-write-files-in-julia/</guid>
-      <description>?open  search: [0m[1mo[22m[0m[1mp[22m[0m[1me[22m[0m[1mn[22m is[0m[1mo[22m[0m[1mp[22m[0m[1me[22m[0m[1mn[22m pr[0m[1mo[22m[0m[1mp[22m[0m[1me[22mrty[0m[1mn[22mames C[0m[1mo[22mm[0m[1mp[22mosit[0m[1me[22mExceptio[0m[1mn[22m [0m[1mo[22m[0m[1mp[22m[0m[1me[22mrm getpr[0m[1mo[22m[0m[1mp[22m[0m[1me[22mrty  open(filename::AbstractString; keywords...) -&amp;gt; IOStream  Open a file in a mode specified by five boolean keyword arguments:
-   Keyword Description Default     read open for reading !write   write open for writing truncate \| append   create create if non-existent !read &amp;amp; write \| truncate \| append   truncate truncate to zero size !</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://notes.hadir.ga/operations-research/tsp-gurobipy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://notes.hadir.ga/operations-research/tsp-gurobipy/</guid>
-      <description>--- ## MIP Model for the TSP in Python This is the model for the TSP writed in Python and using Gurobi solver. The model builds the optimal exact route between a set of cities. It has as parameters:  - `inst` an object of type Instance - `soln` an object of type Solution See the model:  Pres Loads the required packages:
-import os from gurobipy import * from datetime import datetime  Imports auxiliary objects:</description>
+      <guid>https://notes.hadir.ga/julia/parallelism-basics/</guid>
+      <description>Basic concepts in parallelism with Julia Julia coroutines  Commonly known as symetric coroutines, lightweight threads, cooperative multitasking, or one-shot continuations.
+ Julia executes scheduled tasks, can stop a task, executes a new one and then, after finish it, resumes the former one.
+ First-in first-out queue concept.
+  Chanels const jobs = Channel{Int}(32); jobs  const results = Channel{Tuple}(32); function do_work() for job_id in jobs exec_time = rand() sleep(exec_time) # simulates elapsed time doing actual work # typically performed externally.</description>
     </item>
     
   </channel>

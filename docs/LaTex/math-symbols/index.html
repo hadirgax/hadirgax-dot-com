@@ -35,15 +35,15 @@ if (!doNotTrack) {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
 
-<meta property="og:title" content="Anaconda Configuration" />
-<meta property="og:description" content="Anaconda distribution configuration." />
+<meta property="og:title" content="Math Symbols" />
+<meta property="og:description" content="All the math symbols in LaTex" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://notes.hadir.ga/python/anaconda/anaconda/" /><meta property="article:published_time" content="2017-12-20T11:53:49-07:00"/>
-<meta property="article:modified_time" content="2017-12-20T11:53:49-07:00"/>
+<meta property="og:url" content="https://notes.hadir.ga/latex/math-symbols/" /><meta property="article:published_time" content="2018-11-11T11:00:00-07:00"/>
+<meta property="article:modified_time" content="2018-11-11T11:00:00-07:00"/>
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Anaconda Configuration"/>
-<meta name="twitter:description" content="Anaconda distribution configuration."/>
+<meta name="twitter:title" content="Math Symbols"/>
+<meta name="twitter:description" content="All the math symbols in LaTex"/>
 <meta name="twitter:site" content="@hadirga"/>
 
 
@@ -64,7 +64,7 @@ if (!doNotTrack) {
 
 
 
-<title>Anaconda Configuration - Hadir&#39;s Notes</title>
+<title>Math Symbols - Hadir&#39;s Notes</title>
 
 
 <meta name="description" content="My technical notes on Supply Chain &amp; Operations Research.">
@@ -72,7 +72,7 @@ if (!doNotTrack) {
 
 <meta name="author" content="">
 
-<link rel="canonical" href="https://notes.hadir.ga/python/anaconda/anaconda/">
+<link rel="canonical" href="https://notes.hadir.ga/latex/math-symbols/">
 
 
 
@@ -169,52 +169,347 @@ MathJax.Hub.Config({
 <article>
   <div class="technical_note">
   <header>
-    <h1 class="technical_note_title">Anaconda Configuration</h1>
+    <h1 class="technical_note_title">Math Symbols</h1>
     <div class="technical_note_date">
-      <time datetime=" 2017-12-20T11:53:49-07:00 "> 20 Dec 2017</time>
+      <time datetime=" 2018-11-11T11:00:00-07:00 "> 11 Nov 2018</time>
     </div>
   </header>
   <div class="content">
   
 
-<h1 id="create-a-virtual-environment">Create a virtual environment</h1>
+<h1 id="math-symbols-in-latex">Math Symbols in LaTeX</h1>
 
-<p>To create new python a virtual environment in an specific folder and with an specific python version:</p>
+<p>To write math symbols and characteres in LaTeX:
+- use <code>$ ... $</code> for inline entries.
+- use <code>$$ ... $$</code> for centralized block entries.</p>
 
-<p>.. code-block:: bash
-    conda create -p ~/pyenvs/djenv35 python=3.5 or python to install the same version installed with conda</p>
+<h1 id="alphabet-characters">Alphabet Characters</h1>
 
-<p>To create the environment into the default anaconda&rsquo;s :bash:&lsquo;env&rsquo; folder</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>LaTeX Code</th>
+<th>Text Result</th>
+</tr>
+</thead>
 
-<p>.. code-block:: bash
-    conda create -n djenv35 python=3.5</p>
+<tbody>
+<tr>
+<td>Normal uppercase</td>
+<td><code>$ABCDEFGHIJ$</code></td>
+<td>$ABCDEFGH$</td>
+</tr>
 
-<p>to activate/deactivate it when create into a specific path folder, type on terminal:</p>
+<tr>
+<td>Normal lowercase</td>
+<td><code>$abcdefghij$</code></td>
+<td>$abcdefghij$</td>
+</tr>
 
-<p>.. code-block:: bash
-    source activate ~/pyenvs/djenv35
-    source deactivate ~/pyenvs/djenv35</p>
+<tr>
+<td>Numbers</td>
+<td><code>$0123456789$</code></td>
+<td>$0123456789$</td>
+</tr>
 
-<p>to activate/deactivate it when create into anaconda&rsquo;s default env folder, type on terminal:</p>
+<tr>
+<td>Mathcal uppercase</td>
+<td><code>$\mathcal{ABCDEFGHIJ}$</code></td>
+<td>$\mathcal{ABCDEFGHIJ}$</td>
+</tr>
 
-<p>.. code-block:: bash
-    source activate djenv35
-    source deactivate [djenv35]</p>
+<tr>
+<td>Mathcal lowercase</td>
+<td><code>$\mathcal{abcdefghij}$</code></td>
+<td>$\mathcal{abcdefghij}$</td>
+</tr>
 
-<p>to remove an environment created in specific folder path:</p>
+<tr>
+<td>Mathcal Numbers</td>
+<td><code>$\mathcal{0123456789}$</code></td>
+<td>$\mathcal{0123456789}$</td>
+</tr>
+</tbody>
+</table>
 
-<p>.. code-block:: bash
-    conda remove -p /home/user/env_name &ndash;all</p>
+<h2 id="greek-alphabet">Greek Alphabet</h2>
 
-<p>To remove it when created into the anaconda&rsquo;s env folder:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>LaTeX Code</th>
+<th>Text Result</th>
+</tr>
+</thead>
 
-<p>.. code-block:: bash
-    conda remove &ndash;name env_name &ndash;all</p>
+<tbody>
+<tr>
+<td>Alpha</td>
+<td><code>$A$ $\alpha$</code></td>
+<td>$A$ $\alpha$</td>
+</tr>
 
-<p>To view the anaconda&rsquo;s environments</p>
+<tr>
+<td>Beta</td>
+<td><code>$B$ $\beta$</code></td>
+<td>$B$ $\beta$</td>
+</tr>
 
-<p>.. code-block:: bash
-    conda info &ndash;envs</p>
+<tr>
+<td>Gamma</td>
+<td><code>$\Gamma$ $\gamma$</code></td>
+<td>$\Gamma$ $\gamma$</td>
+</tr>
+
+<tr>
+<td>Delta</td>
+<td><code>$\Delta$ $\delta$</code></td>
+<td>$\Delta$ $\delta$</td>
+</tr>
+
+<tr>
+<td>Epsilon</td>
+<td><code>$E$ $\epsilon$</code></td>
+<td>$E$ $\epsilon$</td>
+</tr>
+
+<tr>
+<td>Zeta</td>
+<td><code>$Z$ $\zeta$</code></td>
+<td>$Z$ $\zeta$</td>
+</tr>
+
+<tr>
+<td>Eta</td>
+<td><code>$E$ $\eta$</code></td>
+<td>$E$ $\eta$</td>
+</tr>
+
+<tr>
+<td>Theta</td>
+<td><code>$\Theta$ $\theta$</code></td>
+<td>$\Theta$ $\theta$</td>
+</tr>
+
+<tr>
+<td>Iota</td>
+<td><code>$I$ $\iota$</code></td>
+<td>$I$ $\iota$</td>
+</tr>
+
+<tr>
+<td>Kappa</td>
+<td><code>$K$ $\kappa$</code></td>
+<td>$K$ $\kappa$</td>
+</tr>
+
+<tr>
+<td>Lambda</td>
+<td><code>$\Lambda$ $\lambda$</code></td>
+<td>$\Lambda$ $\lambda$</td>
+</tr>
+
+<tr>
+<td>Mu</td>
+<td><code>$M$ $\mu$</code></td>
+<td>$M$ $\mu$</td>
+</tr>
+
+<tr>
+<td>Nu</td>
+<td><code>$N$ $\nu$</code></td>
+<td>$N$ $\nu$</td>
+</tr>
+
+<tr>
+<td>Xi</td>
+<td><code>$\Xi$ $\xi$</code></td>
+<td>$\Xi$ $\xi$</td>
+</tr>
+
+<tr>
+<td>Omicron</td>
+<td><code>$O$ $\omicron$</code></td>
+<td>$O$ $\omicron$</td>
+</tr>
+
+<tr>
+<td>Pi</td>
+<td><code>$\Pi$ $\pi$</code></td>
+<td>$\Pi$ $\pi$</td>
+</tr>
+
+<tr>
+<td>Rho</td>
+<td><code>$P$ $\rho$</code></td>
+<td>$P$ $\rho$</td>
+</tr>
+
+<tr>
+<td>Sigma</td>
+<td><code>$\Sigma$ $\sigma$</code></td>
+<td>$\Sigma$ $\sigma$</td>
+</tr>
+
+<tr>
+<td>Tau</td>
+<td><code>$T$ $\tau$</code></td>
+<td>$T$ $\tau$</td>
+</tr>
+
+<tr>
+<td>Upsilon</td>
+<td><code>$\Upsilon$ $\upsilon$</code></td>
+<td>$\Upsilon$ $\upsilon$</td>
+</tr>
+
+<tr>
+<td>Phi</td>
+<td><code>$Phi$ $\phi$</code></td>
+<td>$Phi$ $\phi$</td>
+</tr>
+
+<tr>
+<td>Chi</td>
+<td><code>$X$ $\chi$</code></td>
+<td>$X$ $\chi$</td>
+</tr>
+
+<tr>
+<td>Psi</td>
+<td><code>$\Psi$ $\psi$</code></td>
+<td>$\Psi$ $\psi$</td>
+</tr>
+
+<tr>
+<td>Omega</td>
+<td><code>$\Omega$ $\omega$</code></td>
+<td>$\Omega$ $\omega$</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="comparison">Comparison</h2>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>LaTeX Code</th>
+<th>Text Result</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Greater than</td>
+<td><code>$&gt;$</code></td>
+<td>$&gt;$</td>
+</tr>
+
+<tr>
+<td>Greater than or equal</td>
+<td><code>$\geq$</code></td>
+<td>$\geq$</td>
+</tr>
+
+<tr>
+<td>Less than</td>
+<td><code>$&lt;$</code></td>
+<td>$&lt;$</td>
+</tr>
+
+<tr>
+<td>Less than or equal</td>
+<td><code>$\leq$</code></td>
+<td>$\leq$</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="others">Others</h2>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>LaTeX Code</th>
+<th>Text Result</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Cardinality</td>
+<td><code>$\|A\vert$</code></td>
+<td>$</td>
+</tr>
+
+<tr>
+<td>Absolute value</td>
+<td><code>$\|a\vert$</code></td>
+<td>$</td>
+</tr>
+
+<tr>
+<td>Parenthesis</td>
+<td><code>$(x)$</code></td>
+<td>$(x)$</td>
+</tr>
+
+<tr>
+<td>Brackets</td>
+<td><code>$[y]$</code></td>
+<td>$[y]$</td>
+</tr>
+
+<tr>
+<td>Braces</td>
+<td><code>$\{z\}$</code></td>
+<td>${z}$</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="operators">Operators</h2>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>LaTeX Code</th>
+<th>Text Result</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Sum</td>
+<td><code>$+$</code></td>
+<td>$+$</td>
+</tr>
+
+<tr>
+<td>Summatory</td>
+<td><code>$\sum{x}$</code></td>
+<td>$\sum{x}$</td>
+</tr>
+
+<tr>
+<td>Product</td>
+<td><code>$a\cdot b$</code></td>
+<td>$a\cdot b$</td>
+</tr>
+
+<tr>
+<td>Product</td>
+<td><code>$a\times b$</code></td>
+<td>$a\times b$</td>
+</tr>
+</tbody>
+</table>
 
 </div>
   <aside>

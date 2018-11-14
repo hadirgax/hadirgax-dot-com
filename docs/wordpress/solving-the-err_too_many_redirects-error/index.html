@@ -35,15 +35,19 @@ if (!doNotTrack) {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
 
-<meta property="og:title" content="Solving the &#39;ERR_TOO_MANY_REDIRECTS&#39; error" />
-<meta property="og:description" content=" Solving the ERR_TOO_MANY_REDIRECTS error " />
+<meta property="og:title" content="Solving the `ERR_TOO_MANY_REDIRECTS` error" />
+<meta property="og:description" content="Solving the ERR_TOO_MANY_REDIRECTS error A kind of ERR_TOO_MANY_REDIRECTS error is when we try to acces the wp-admin page.
+After trying to change the site address using the popular internet solution, add a couple of line into the wp-config.php file:
+/** WP Home Address **/ define(&#39;WP_HOME&#39;,&#39;http://example.com&#39;); define(&#39;WP_SITEURL&#39;,&#39;http://example.com&#39;);  Those lines of code do not work correctly and the solution is to change the address fields directly from database. Follow the steps:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://notes.hadir.ga/wordpress/solving-the-err_too_many_redirects-error/" /><meta property="article:published_time" content="2018-11-06T18:30:48&#43;00:00"/>
 <meta property="article:modified_time" content="2018-11-06T18:30:48&#43;00:00"/>
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Solving the &#39;ERR_TOO_MANY_REDIRECTS&#39; error"/>
-<meta name="twitter:description" content=" Solving the ERR_TOO_MANY_REDIRECTS error "/>
+<meta name="twitter:title" content="Solving the `ERR_TOO_MANY_REDIRECTS` error"/>
+<meta name="twitter:description" content="Solving the ERR_TOO_MANY_REDIRECTS error A kind of ERR_TOO_MANY_REDIRECTS error is when we try to acces the wp-admin page.
+After trying to change the site address using the popular internet solution, add a couple of line into the wp-config.php file:
+/** WP Home Address **/ define(&#39;WP_HOME&#39;,&#39;http://example.com&#39;); define(&#39;WP_SITEURL&#39;,&#39;http://example.com&#39;);  Those lines of code do not work correctly and the solution is to change the address fields directly from database. Follow the steps:"/>
 <meta name="twitter:site" content="@hadirga"/>
 
 
@@ -64,7 +68,7 @@ if (!doNotTrack) {
 
 
 
-<title>Solving the &#39;ERR_TOO_MANY_REDIRECTS&#39; error - Hadir&#39;s Notes</title>
+<title>Solving the `ERR_TOO_MANY_REDIRECTS` error - Hadir&#39;s Notes</title>
 
 
 <meta name="description" content="My technical notes on Supply Chain &amp; Operations Research.">
@@ -172,6 +176,27 @@ MathJax.Hub.Config({
 
 <h1 id="solving-the-err-too-many-redirects-error">Solving the <code>ERR_TOO_MANY_REDIRECTS</code> error</h1>
 
+<p>A kind of <code>ERR_TOO_MANY_REDIRECTS</code> error is when we try to acces the <code>wp-admin</code> page.</p>
+
+<p>After trying to change the site address using the popular internet solution, add a couple of line into the <code>wp-config.php</code> file:</p>
+
+<pre><code class="language-php">/** WP Home Address **/
+define('WP_HOME','http://example.com');
+define('WP_SITEURL','http://example.com');
+</code></pre>
+
+<p>Those lines of code do not work correctly and the solution is to change the address fields directly from database. Follow the steps:</p>
+
+<ol>
+<li>Access the cPanel</li>
+<li>Access the phpMyAdmin</li>
+<li>Select the database of you website</li>
+<li>Select the options table</li>
+<li>Modify the fields <code>home</code> and <code>siteurl</code> with the correct address.</li>
+</ol>
+
+<p>After that, your website will be working again.</p>
+
     </div>
   </div>
 </article>
@@ -184,7 +209,7 @@ MathJax.Hub.Config({
 
     <footer class="footer text-center">
         <div class="container">
-        <span class="text-muted">This project contains 11 pages and is available on <a href="https://github.com/hadirga/notes">GitHub</a>. Copyright &copy; hadir.ga, <time datetime="2018">2018</time>.</span>
+        <span class="text-muted">This project contains 20 pages and is available on <a href="https://github.com/hadirga/notes">GitHub</a>. Copyright &copy; hadir.ga, <time datetime="2018">2018</time>.</span>
 </div>
 
     </footer>

@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://notes.hadir.ga/latex/math-symbols/</loc>
+    <lastmod>2018-11-11T11:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://notes.hadir.ga/wordpress/solving-the-err_too_many_redirects-error/</loc>
     <lastmod>2018-11-06T18:30:48+00:00</lastmod>
   </url>
@@ -13,6 +18,11 @@
   </url>
   
   <url>
+    <loc>https://notes.hadir.ga/git/gitignore-file/</loc>
+    <lastmod>2018-10-31T22:36:29+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://notes.hadir.ga/python/basics/classes/</loc>
     <lastmod>2018-10-30T01:07:18-03:00</lastmod>
   </url>
@@ -20,6 +30,46 @@
   <url>
     <loc>https://notes.hadir.ga/</loc>
     <lastmod>2018-10-29T21:07:13+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://notes.hadir.ga/supply-chain/procurement/</loc>
+    <lastmod>2018-10-27T15:28:21-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://notes.hadir.ga/supply-chain/transportation/</loc>
+    <lastmod>2018-10-27T15:27:57-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://notes.hadir.ga/supply-chain/logistics/</loc>
+    <lastmod>2018-10-27T15:27:41-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://notes.hadir.ga/mathematics/euclidean-geometry/</loc>
+    <lastmod>2018-10-27T15:26:11-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://notes.hadir.ga/about/me/</loc>
+    <lastmod>2018-10-24T14:09:42-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://notes.hadir.ga/operations-research/tsp-gurobipy/</loc>
+    <lastmod>2018-10-22T16:32:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://notes.hadir.ga/julia/read-write-files-in-julia/</loc>
+    <lastmod>2018-10-22T16:32:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://notes.hadir.ga/operations-research/tsp-formulation/</loc>
+    <lastmod>2018-10-22T16:32:58+00:00</lastmod>
   </url>
   
   <url>
@@ -53,15 +103,19 @@
   </url>
   
   <url>
-    <loc>https://notes.hadir.ga/julia/read-write-files-in-julia/</loc>
-  </url>
-  
-  <url>
-    <loc>https://notes.hadir.ga/operations-research/tsp-gurobipy/</loc>
+    <loc>https://notes.hadir.ga/about/</loc>
+    <lastmod>2018-10-24T14:09:42-03:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://notes.hadir.ga/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://notes.hadir.ga/git/</loc>
+    <lastmod>2018-10-31T22:36:29+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -72,19 +126,42 @@
   </url>
   
   <url>
+    <loc>https://notes.hadir.ga/latex/</loc>
+    <lastmod>2018-11-11T11:00:00-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://notes.hadir.ga/linux-ubuntu/</loc>
     <lastmod>2017-12-20T11:53:49-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://notes.hadir.ga/operations-research/</loc>
+    <loc>https://notes.hadir.ga/mathematics/</loc>
+    <lastmod>2018-10-27T15:26:11-03:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://notes.hadir.ga/operations-research/</loc>
+    <lastmod>2018-10-22T16:32:58+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://notes.hadir.ga/julia/parallelism-basics/</loc>
   </url>
   
   <url>
     <loc>https://notes.hadir.ga/python/</loc>
     <lastmod>2018-10-30T01:07:18-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://notes.hadir.ga/supply-chain/</loc>
+    <lastmod>2018-10-27T15:28:21-03:00</lastmod>
     <priority>0</priority>
   </url>
   

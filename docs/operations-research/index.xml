@@ -1,23 +1,38 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Operations Research on Hadir&#39;s Notes</title>
+    <title>Operations-research on Hadir&#39;s Notes</title>
     <link>https://notes.hadir.ga/operations-research/</link>
-    <description>Recent content in Operations Research on Hadir&#39;s Notes</description>
+    <description>Recent content in Operations-research on Hadir&#39;s Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Mon, 22 Oct 2018 16:32:58 +0000</lastBuildDate>
     
 	<atom:link href="https://notes.hadir.ga/operations-research/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title></title>
+      <title>An MIP model for the TSP with gurobipy</title>
       <link>https://notes.hadir.ga/operations-research/tsp-gurobipy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 22 Oct 2018 16:32:58 +0000</pubDate>
       
       <guid>https://notes.hadir.ga/operations-research/tsp-gurobipy/</guid>
-      <description>--- ## MIP Model for the TSP in Python This is the model for the TSP writed in Python and using Gurobi solver. The model builds the optimal exact route between a set of cities. It has as parameters:  - `inst` an object of type Instance - `soln` an object of type Solution See the model:  Pres Loads the required packages:
+      <description>An MIP model for the TSP with gurobipy This is the model for the TSP wrote in Python and using the Gurobi solver. The model builds the optimal exact route between a set of cities. It has as parameters:
+- `inst` an object of type Instance - `soln` an object of type Solution See the model:  preliminaries Loads the required packages:
 import os from gurobipy import * from datetime import datetime  Imports auxiliary objects:</description>
+    </item>
+    
+    <item>
+      <title>The Travel Salesman Problem (TSP)</title>
+      <link>https://notes.hadir.ga/operations-research/tsp-formulation/</link>
+      <pubDate>Mon, 22 Oct 2018 16:32:58 +0000</pubDate>
+      
+      <guid>https://notes.hadir.ga/operations-research/tsp-formulation/</guid>
+      <description>The Travel Salesman Problem (TSP) There are two versions of the TSP math formulation based in MIP, the Simetric and asimetric.
+Math Formulation for the simetric TSP The math formulation
+Math Formulation for the asimetric TSP The math formulation
+Starts and Ends at the Same City In the case where the salesman starts and ends at the same city, the problem has to new constratins.
+(c1) $$\sum{j=1}^{n}{x{0j}} = 1$$</description>
     </item>
     
   </channel>

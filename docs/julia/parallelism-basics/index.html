@@ -35,15 +35,20 @@ if (!doNotTrack) {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
 
-<meta property="og:title" content="Anaconda Configuration" />
-<meta property="og:description" content="Anaconda distribution configuration." />
+<meta property="og:title" content="Parallelism-basics" />
+<meta property="og:description" content="Basic concepts in parallelism with Julia Julia coroutines  Commonly known as symetric coroutines, lightweight threads, cooperative multitasking, or one-shot continuations.
+ Julia executes scheduled tasks, can stop a task, executes a new one and then, after finish it, resumes the former one.
+ First-in first-out queue concept.
+  Chanels const jobs = Channel{Int}(32); jobs  const results = Channel{Tuple}(32); function do_work() for job_id in jobs exec_time = rand() sleep(exec_time) # simulates elapsed time doing actual work # typically performed externally." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://notes.hadir.ga/python/anaconda/anaconda/" /><meta property="article:published_time" content="2017-12-20T11:53:49-07:00"/>
-<meta property="article:modified_time" content="2017-12-20T11:53:49-07:00"/>
+<meta property="og:url" content="https://notes.hadir.ga/julia/parallelism-basics/" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Anaconda Configuration"/>
-<meta name="twitter:description" content="Anaconda distribution configuration."/>
+<meta name="twitter:title" content="Parallelism-basics"/>
+<meta name="twitter:description" content="Basic concepts in parallelism with Julia Julia coroutines  Commonly known as symetric coroutines, lightweight threads, cooperative multitasking, or one-shot continuations.
+ Julia executes scheduled tasks, can stop a task, executes a new one and then, after finish it, resumes the former one.
+ First-in first-out queue concept.
+  Chanels const jobs = Channel{Int}(32); jobs  const results = Channel{Tuple}(32); function do_work() for job_id in jobs exec_time = rand() sleep(exec_time) # simulates elapsed time doing actual work # typically performed externally."/>
 <meta name="twitter:site" content="@hadirga"/>
 
 
@@ -64,7 +69,7 @@ if (!doNotTrack) {
 
 
 
-<title>Anaconda Configuration - Hadir&#39;s Notes</title>
+<title>Parallelism-basics - Hadir&#39;s Notes</title>
 
 
 <meta name="description" content="My technical notes on Supply Chain &amp; Operations Research.">
@@ -72,7 +77,7 @@ if (!doNotTrack) {
 
 <meta name="author" content="">
 
-<link rel="canonical" href="https://notes.hadir.ga/python/anaconda/anaconda/">
+<link rel="canonical" href="https://notes.hadir.ga/julia/parallelism-basics/">
 
 
 
@@ -165,66 +170,73 @@ MathJax.Hub.Config({
         <div class="row">
             <div class="col-sm-12">
                 
-
 <article>
-  <div class="technical_note">
-  <header>
-    <h1 class="technical_note_title">Anaconda Configuration</h1>
-    <div class="technical_note_date">
-      <time datetime=" 2017-12-20T11:53:49-07:00 "> 20 Dec 2017</time>
+  <div class="page">
+    <div class="content">
+      
+
+<h1 id="basic-concepts-in-parallelism-with-julia">Basic concepts in parallelism with Julia</h1>
+
+<h2 id="julia-coroutines">Julia coroutines</h2>
+
+<ul>
+<li><p>Commonly known as symetric coroutines, lightweight threads, cooperative multitasking, or one-shot continuations.</p></li>
+
+<li><p>Julia executes scheduled tasks, can stop a task, executes a new one and then, after finish it, resumes the former one.</p></li>
+
+<li><p>First-in first-out queue concept.</p></li>
+</ul>
+
+<h3 id="chanels">Chanels</h3>
+
+<pre><code class="language-julia">const jobs = Channel{Int}(32);
+jobs
+</code></pre>
+
+<pre><code class="language-julia">const results = Channel{Tuple}(32);
+
+function do_work()
+   for job_id in jobs
+       exec_time = rand()
+       sleep(exec_time)                # simulates elapsed time doing actual work
+                                       # typically performed externally.
+       put!(results, (job_id, exec_time))
+   end
+end;
+
+function make_jobs(n)
+   for i in 1:n
+       put!(jobs, i)
+   end
+end;
+
+n = 12;
+
+@async make_jobs(n); # feed the jobs channel with &quot;n&quot; jobs
+
+for i in 1:4 # start 4 tasks to process requests in parallel
+   @async do_work()
+end
+
+@elapsed while n &gt; 0 # print out results
+   job_id, exec_time = take!(results)
+   println(&quot;$job_id finished in $(round(exec_time; digits=2)) seconds&quot;)
+   global n = n - 1
+end
+</code></pre>
+
+<h2 id="multi-threading">Multi-threading</h2>
+
+<h2 id="multi-core-or-distributed-processing">Multi-core or distributed processing</h2>
+
+<h1 id="references">References</h1>
+
+<ul>
+<li><a href="https://docs.julialang.org/en/v1/manual/parallel-computing/index.html">Julia Documentation</a>. Accesed on Nov 12th, 2018</li>
+</ul>
+
     </div>
-  </header>
-  <div class="content">
-  
-
-<h1 id="create-a-virtual-environment">Create a virtual environment</h1>
-
-<p>To create new python a virtual environment in an specific folder and with an specific python version:</p>
-
-<p>.. code-block:: bash
-    conda create -p ~/pyenvs/djenv35 python=3.5 or python to install the same version installed with conda</p>
-
-<p>To create the environment into the default anaconda&rsquo;s :bash:&lsquo;env&rsquo; folder</p>
-
-<p>.. code-block:: bash
-    conda create -n djenv35 python=3.5</p>
-
-<p>to activate/deactivate it when create into a specific path folder, type on terminal:</p>
-
-<p>.. code-block:: bash
-    source activate ~/pyenvs/djenv35
-    source deactivate ~/pyenvs/djenv35</p>
-
-<p>to activate/deactivate it when create into anaconda&rsquo;s default env folder, type on terminal:</p>
-
-<p>.. code-block:: bash
-    source activate djenv35
-    source deactivate [djenv35]</p>
-
-<p>to remove an environment created in specific folder path:</p>
-
-<p>.. code-block:: bash
-    conda remove -p /home/user/env_name &ndash;all</p>
-
-<p>To remove it when created into the anaconda&rsquo;s env folder:</p>
-
-<p>.. code-block:: bash
-    conda remove &ndash;name env_name &ndash;all</p>
-
-<p>To view the anaconda&rsquo;s environments</p>
-
-<p>.. code-block:: bash
-    conda info &ndash;envs</p>
-
-</div>
-  <aside>
-      <div class="bug_reporting">
-          <h4>Find an error or bug?</h4>
-          <p>Everything on this site is available on GitHub. Start a<a href='https://github.com/hadirga/notes/issues/new'> new issue</a> and submit your changes. You can also contact me directly on social links at the top of this site.</p>
-      </div>
-      </aside>
-
-    </div>
+  </div>
 </article>
 
             </div>

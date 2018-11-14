@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Read-write-files-in-julia</title>
+      <link>https://notes.hadir.ga/julia/read-write-files-in-julia/</link>
+      <pubDate>Mon, 22 Oct 2018 16:32:58 +0000</pubDate>
+      
+      <guid>https://notes.hadir.ga/julia/read-write-files-in-julia/</guid>
+      <description>?open  search: [0m[1mo[22m[0m[1mp[22m[0m[1me[22m[0m[1mn[22m is[0m[1mo[22m[0m[1mp[22m[0m[1me[22m[0m[1mn[22m pr[0m[1mo[22m[0m[1mp[22m[0m[1me[22mrty[0m[1mn[22mames C[0m[1mo[22mm[0m[1mp[22mosit[0m[1me[22mExceptio[0m[1mn[22m [0m[1mo[22m[0m[1mp[22m[0m[1me[22mrm getpr[0m[1mo[22m[0m[1mp[22m[0m[1me[22mrty  open(filename::AbstractString; keywords...) -&amp;gt; IOStream  Open a file in a mode specified by five boolean keyword arguments:
+   Keyword Description Default     read open for reading !write   write open for writing truncate \| append   create create if non-existent !read &amp;amp; write \| truncate \| append   truncate truncate to zero size !</description>
+    </item>
+    
+    <item>
       <title>Working with dates and time functions</title>
       <link>https://notes.hadir.ga/julia/working-with-dates-and-time-functions/</link>
       <pubDate>Mon, 22 Oct 2018 16:32:58 +0000</pubDate>
@@ -24,13 +34,15 @@ Preliminaries Load the required packages (if not installed or not updated), it i
     </item>
     
     <item>
-      <title></title>
-      <link>https://notes.hadir.ga/julia/read-write-files-in-julia/</link>
+      <title>Parallelism-basics</title>
+      <link>https://notes.hadir.ga/julia/parallelism-basics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://notes.hadir.ga/julia/read-write-files-in-julia/</guid>
-      <description>?open  search: [0m[1mo[22m[0m[1mp[22m[0m[1me[22m[0m[1mn[22m is[0m[1mo[22m[0m[1mp[22m[0m[1me[22m[0m[1mn[22m pr[0m[1mo[22m[0m[1mp[22m[0m[1me[22mrty[0m[1mn[22mames C[0m[1mo[22mm[0m[1mp[22mosit[0m[1me[22mExceptio[0m[1mn[22m [0m[1mo[22m[0m[1mp[22m[0m[1me[22mrm getpr[0m[1mo[22m[0m[1mp[22m[0m[1me[22mrty  open(filename::AbstractString; keywords...) -&amp;gt; IOStream  Open a file in a mode specified by five boolean keyword arguments:
-   Keyword Description Default     read open for reading !write   write open for writing truncate \| append   create create if non-existent !read &amp;amp; write \| truncate \| append   truncate truncate to zero size !</description>
+      <guid>https://notes.hadir.ga/julia/parallelism-basics/</guid>
+      <description>Basic concepts in parallelism with Julia Julia coroutines  Commonly known as symetric coroutines, lightweight threads, cooperative multitasking, or one-shot continuations.
+ Julia executes scheduled tasks, can stop a task, executes a new one and then, after finish it, resumes the former one.
+ First-in first-out queue concept.
+  Chanels const jobs = Channel{Int}(32); jobs  const results = Channel{Tuple}(32); function do_work() for job_id in jobs exec_time = rand() sleep(exec_time) # simulates elapsed time doing actual work # typically performed externally.</description>
     </item>
     
   </channel>

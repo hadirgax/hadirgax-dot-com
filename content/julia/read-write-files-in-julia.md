@@ -1,4 +1,10 @@
-
+---
+title: "Read-write-files-in-julia"
+author: "Hadir Garcia-Castro"
+date: 2018-10-22T16:32:58.713
+type: technical-note
+draft: false
+---
 
 ```julia
 ?open
