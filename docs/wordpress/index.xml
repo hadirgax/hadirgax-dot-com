@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wordpress on Hadir&#39;s Notes</title>
+    <link>https://notes.hadir.ga/wordpress/</link>
+    <description>Recent content in Wordpress on Hadir&#39;s Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Nov 2018 13:34:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://notes.hadir.ga/wordpress/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Create a child theme</title>
+      <link>https://notes.hadir.ga/wordpress/create-a-child-theme/</link>
+      <pubDate>Thu, 15 Nov 2018 13:34:00 +0000</pubDate>
+      
+      <guid>https://notes.hadir.ga/wordpress/create-a-child-theme/</guid>
+      <description>Create a child theme To create a child them on Wordpress do the following steps:
+Step 1 Open you server directory via FTP, find you domine and into the wp-content folder find the themesfolder.
+Step 2 Into the themes folder, create a new folder and name it as child-theme.
+Step 3 Create two files, a style.css file and a functions.php file, and write the following lines into them.
+# style.</description>
+    </item>
+    
+    <item>
+      <title>Solving the ERR_TOO_MANY_REDIRECTS error</title>
+      <link>https://notes.hadir.ga/wordpress/solving-the-err_too_many_redirects-error/</link>
+      <pubDate>Tue, 06 Nov 2018 18:30:48 +0000</pubDate>
+      
+      <guid>https://notes.hadir.ga/wordpress/solving-the-err_too_many_redirects-error/</guid>
+      <description>Solving the ERR_TOO_MANY_REDIRECTS error A kind of ERR_TOO_MANY_REDIRECTS error is when we try to acces the wp-admin page.
+After trying to change the site address using the popular internet solution, add a couple of line into the wp-config.php file:
+/** WP Home Address **/ define(&#39;WP_HOME&#39;,&#39;http://example.com&#39;); define(&#39;WP_SITEURL&#39;,&#39;http://example.com&#39;);  Those lines of code do not work correctly and the solution is to change the address fields directly from database. Follow the steps:</description>
+    </item>
+    
+    <item>
+      <title>Change site URL</title>
+      <link>https://notes.hadir.ga/wordpress/change-site-url/</link>
+      <pubDate>Tue, 06 Nov 2018 18:25:48 +0000</pubDate>
+      
+      <guid>https://notes.hadir.ga/wordpress/change-site-url/</guid>
+      <description>Change site URL If the fields are disabled To change the WordPress home address or Site URL, however the fields are disable to be edited. Then find the wp-config.php file via FTP and open up it. Look for the WP_HOME or WP_SITEURL fields and erase them to enable the files in the WP panel again. If they (the fileds) do not exist and you want to disable them, then write the following lines at the end of the file:</description>
+    </item>
+    
+  </channel>
+</rss>
