@@ -15,19 +15,10 @@ Load the required packages (if not installed or not updated), it is not necessar
 
 
 ```julia
-#In
+#[In]
 using Pkg
 Pkg.add("Dates")
-
-#Out
 ```
-
-    [32m[1m Resolving[22m[39m package versions...
-    [32m[1m  Updating[22m[39m `C:\Users\Hadir Castro\.julia\environments\v1.0\Project.toml`
-    [90m [no changes][39m
-    [32m[1m  Updating[22m[39m `C:\Users\Hadir Castro\.julia\environments\v1.0\Manifest.toml`
-    [90m [no changes][39m
-    
 
 Call the 'Dates' package.
 
@@ -43,15 +34,15 @@ A simple function that returns the just now time in `'YYYY-MM-DDTHH:mm:ss.ms'` f
 
 
 ```julia
-#In
+#[In]
 now = Dates.now()
 
-#Out
+#[Out]
 ```
 
 
 
 
-    2018-11-12T16:24:01.176
+    2018-11-19T22:37:49.482
 
 

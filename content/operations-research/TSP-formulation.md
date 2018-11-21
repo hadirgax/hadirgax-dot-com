@@ -10,6 +10,10 @@ draft: false
 
 There are two versions of the TSP math formulation based in MIP, the Simetric and asimetric.
 
+The simetric case, where $c_{ij}=0$ for all $i\geq j$, is NP-complete *(Laporte1992b)*
+
+However, the asimetric case is NP-hard.
+
 ## Math Formulation for the simetric TSP
 The math formulation
 
@@ -17,13 +21,13 @@ The math formulation
 The math formulation
 
 ## Starts and Ends at the Same City
-In the case where the salesman starts and ends at the same city, the problem has to new constratins.
+In the case where the salesman starts and ends at the same city, the problem has two new constratins.
 
-(c1)
+[c1]
 $$\sum_{j=1}^{n}{x_{0j}} = 1$$
 
-(c2)
-$$\sum_{j=1}^{n}{x_{0j}} = 1$$
+[c2]
+$$\sum_{i=1}^{n}{x_{i0}} = 1$$
 
 ```python
 import os

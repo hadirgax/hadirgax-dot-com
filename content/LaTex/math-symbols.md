@@ -6,7 +6,7 @@ description: "All the math symbols in LaTex"
 type: technical_note
 draft: false
 ---
-# Math Symbols in LaTeX
+# Math symbols in LaTeX
 
 To write math symbols and characteres in LaTeX:
 - use `$ ... $` for inline entries.
@@ -59,14 +59,16 @@ Less than|`$<$`|$<$
 Less than or equal|`$\leq$`|$\leq$
 
 
-## Others
-Name|LaTeX Code|Text Result
-----|----------|-----------
-Cardinality|`$\|A\vert$`|$|A\vert$
-Absolute value|`$\|a\vert$`|$|a\vert$
-Parenthesis|`$(x)$`|$(x)$
-Brackets|`$[y]$`|$[y]$
-Braces|`$\{z\}$`|$\{z\}$
+## Set theory
+Name           | LaTeX Code       | Text Result
+:---           | :---:            | :---:
+Cardinality    | `$\|A\vert$`     | $|A\vert$
+Absolute value | `$\|a\vert$`     | $ | a\vert$
+Parenthesis    | `$(x)$`          | $(x)$
+Brackets       | `$[y]$`          | $[y]$
+Braces         | `$\{z\}$`        | $\{z\}$
+For all        | `$\forall$`      | $\forall$
+Set minus      | `$A\setminus b$` | $A\setminus b$
 
 ## Operators
 Name|LaTeX Code|Text Result

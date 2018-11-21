@@ -6,10 +6,23 @@
     <description>Recent content in Wordpress on Hadir&#39;s Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Nov 2018 18:30:48 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Nov 2018 13:34:00 +0000</lastBuildDate>
     
 	<atom:link href="https://notes.hadir.ga/wordpress/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Create a child theme</title>
+      <link>https://notes.hadir.ga/wordpress/create-a-child-theme/</link>
+      <pubDate>Thu, 15 Nov 2018 13:34:00 +0000</pubDate>
+      
+      <guid>https://notes.hadir.ga/wordpress/create-a-child-theme/</guid>
+      <description>Create a child theme To create a child them on Wordpress do the following steps:
+Step 1 Open you server directory via FTP, find you domine and into the wp-content folder find the themesfolder.
+Step 2 Into the themes folder, create a new folder and name it as child-theme.
+Step 3 Create two files, a style.css file and a functions.php file, and write the following lines into them.
+# style.</description>
+    </item>
     
     <item>
       <title>Solving the ERR_TOO_MANY_REDIRECTS error</title>

@@ -35,7 +35,7 @@ if (!doNotTrack) {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
 
-<meta property="og:title" content="Parallelism-basics" />
+<meta property="og:title" content="Parallelism basics" />
 <meta property="og:description" content="Basic concepts in parallelism with Julia Julia coroutines  Commonly known as symetric coroutines, lightweight threads, cooperative multitasking, or one-shot continuations.
  Julia executes scheduled tasks, can stop a task, executes a new one and then, after finish it, resumes the former one.
  First-in first-out queue concept.
@@ -44,7 +44,7 @@ if (!doNotTrack) {
 <meta property="og:url" content="https://notes.hadir.ga/julia/parallelism-basics/" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Parallelism-basics"/>
+<meta name="twitter:title" content="Parallelism basics"/>
 <meta name="twitter:description" content="Basic concepts in parallelism with Julia Julia coroutines  Commonly known as symetric coroutines, lightweight threads, cooperative multitasking, or one-shot continuations.
  Julia executes scheduled tasks, can stop a task, executes a new one and then, after finish it, resumes the former one.
  First-in first-out queue concept.
@@ -69,7 +69,7 @@ if (!doNotTrack) {
 
 
 
-<title>Parallelism-basics - Hadir&#39;s Notes</title>
+<title>Parallelism basics - Hadir&#39;s Notes</title>
 
 
 <meta name="description" content="My technical notes on Supply Chain &amp; Operations Research.">
@@ -227,7 +227,70 @@ end
 
 <h2 id="multi-threading">Multi-threading</h2>
 
+<p>Example:</p>
+
+<pre><code class="language-julia"># Know how many threads have been used.
+Threads.nthreads()
+</code></pre>
+
+<pre><code>1
+</code></pre>
+
+<pre><code class="language-julia"># Define a different number of threads.
+export JULIA_NUM_THREADS=4
+</code></pre>
+
+<pre><code>syntax: invalid assignment location &quot;export JULIA_NUM_THREADS&quot;
+</code></pre>
+
+<pre><code class="language-julia">Threads.threadid()
+</code></pre>
+
+<pre><code>1
+</code></pre>
+
+<h3 id="the-threads-macro">The <code>@threads</code> macro</h3>
+
+<pre><code class="language-julia">a = zeros(10)
+</code></pre>
+
+<pre><code>10-element Array{Float64,1}:
+ 0.0
+ 0.0
+ 0.0
+ 0.0
+ 0.0
+ 0.0
+ 0.0
+ 0.0
+ 0.0
+ 0.0
+</code></pre>
+
+<pre><code class="language-julia">Threads.@threads for i = 1:10
+    a[i] = Threads.threadid()
+end
+</code></pre>
+
+<pre><code class="language-julia">a
+</code></pre>
+
+<pre><code>10-element Array{Float64,1}:
+ 1.0
+ 1.0
+ 1.0
+ 1.0
+ 1.0
+ 1.0
+ 1.0
+ 1.0
+ 1.0
+ 1.0
+</code></pre>
+
 <h2 id="multi-core-or-distributed-processing">Multi-core or distributed processing</h2>
+
+<p>Example:</p>
 
 <h1 id="references">References</h1>
 
@@ -247,7 +310,7 @@ end
 
     <footer class="footer text-center">
         <div class="container">
-        <span class="text-muted">This project contains 20 pages and is available on <a href="https://github.com/hadirga/notes">GitHub</a>. Copyright &copy; hadir.ga, <time datetime="2018">2018</time>.</span>
+        <span class="text-muted">This project contains 24 pages and is available on <a href="https://github.com/hadirga/notes">GitHub</a>. Copyright &copy; hadir.ga, <time datetime="2018">2018</time>.</span>
 </div>
 
     </footer>

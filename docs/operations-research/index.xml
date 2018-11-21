@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Algorithms to solve the TSP</title>
+      <link>https://notes.hadir.ga/operations-research/tsp-solution-methods/</link>
+      <pubDate>Mon, 22 Oct 2018 16:32:58 +0000</pubDate>
+      
+      <guid>https://notes.hadir.ga/operations-research/tsp-solution-methods/</guid>
+      <description>Algorithms to solve the TSP. Exact algorithms Hueristic algorithms import os from gurobipy import * from datetime import datetime from classes import Intance, Solution from util import mtx_distance inst = Instance.load_data() soln = Solution(&#39;TSP&#39;, &#39;MIP Solution&#39;) # the number of cities in the instance. n = inst.nnodes # distances between each pair of cities (i,j) distance = mtx_distance(inst.xlng, inst.ylat, scale=100)  # The Gurobi model for the TSP try: # Initialize the Traveling Salesman Problem Model tsp = Model(&#39;TSP&#39;) tsp.</description>
+    </item>
+    
+    <item>
       <title>An MIP model for the TSP with gurobipy</title>
       <link>https://notes.hadir.ga/operations-research/tsp-gurobipy/</link>
       <pubDate>Mon, 22 Oct 2018 16:32:58 +0000</pubDate>
@@ -29,10 +38,11 @@ import os from gurobipy import * from datetime import datetime  Imports auxiliar
       
       <guid>https://notes.hadir.ga/operations-research/tsp-formulation/</guid>
       <description>The Travel Salesman Problem (TSP) There are two versions of the TSP math formulation based in MIP, the Simetric and asimetric.
+The simetric case, where $c_{ij}=0$ for all $i\geq j$, is NP-complete (Laporte1992b)
+However, the asimetric case is NP-hard.
 Math Formulation for the simetric TSP The math formulation
 Math Formulation for the asimetric TSP The math formulation
-Starts and Ends at the Same City In the case where the salesman starts and ends at the same city, the problem has to new constratins.
-(c1) $$\sum{j=1}^{n}{x{0j}} = 1$$</description>
+Starts and Ends at the Same City In the case where the salesman starts and ends at the same city, the problem has two new constratins.</description>
     </item>
     
   </channel>

@@ -27,14 +27,15 @@
       <pubDate>Mon, 22 Oct 2018 16:32:58 +0000</pubDate>
       
       <guid>https://notes.hadir.ga/julia/working-with-dates-and-time-functions/</guid>
-      <description>Working with dates and time functions Examples of date/time functions in Julia.
+      <description> Working with dates and time functions Examples of date/time functions in Julia.
 Preliminaries Load the required packages (if not installed or not updated), it is not necessary to execute every time.
-#In using Pkg Pkg.add(&amp;quot;Dates&amp;quot;) #Out  [32m[1m Resolving[22m[39m package versions... [32m[1m Updating[22m[39m `C:\Users\Hadir Castro\.julia\environments\v1.0\Project.toml` [90m [no changes][39m [32m[1m Updating[22m[39m `C:\Users\Hadir Castro\.julia\environments\v1.0\Manifest.toml` [90m [no changes][39m  Call the &amp;lsquo;Dates&amp;rsquo; package.
-#In using Dates  now() function A simple function that returns the just now time in &#39;YYYY-MM-DDTHH:mm:ss.</description>
+#[In] using Pkg Pkg.add(&amp;quot;Dates&amp;quot;)  Call the &amp;lsquo;Dates&amp;rsquo; package.
+#In using Dates  now() function A simple function that returns the just now time in &#39;YYYY-MM-DDTHH:mm:ss.ms&#39; format.
+#[In] now = Dates.now() #[Out]  2018-11-19T22:37:49.482  </description>
     </item>
     
     <item>
-      <title>Parallelism-basics</title>
+      <title>Parallelism basics</title>
       <link>https://notes.hadir.ga/julia/parallelism-basics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

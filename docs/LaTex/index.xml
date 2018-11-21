@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>LaTex on Hadir&#39;s Notes</title>
+    <title>LaTeX on Hadir&#39;s Notes</title>
     <link>https://notes.hadir.ga/latex/</link>
-    <description>Recent content in LaTex on Hadir&#39;s Notes</description>
+    <description>Recent content in LaTeX on Hadir&#39;s Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 Nov 2018 11:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 19 Nov 2018 22:37:49 +0000</lastBuildDate>
     
 	<atom:link href="https://notes.hadir.ga/latex/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Spaces in LaTeX</title>
+      <link>https://notes.hadir.ga/latex/spaces/</link>
+      <pubDate>Mon, 19 Nov 2018 22:37:49 +0000</pubDate>
+      
+      <guid>https://notes.hadir.ga/latex/spaces/</guid>
+      <description> Spaces in LaTeX Horizontal Spaces    Name Code Result     No Space $ab$ $ab$   Thin $a\thinspace b$ $a\thinspace b$    $a\ b$ $a\ b$    $a\,b$ $a\,b$    $a\space b$ $a\space b$   En $a\enspace b$ $a\enspace b$   Quad $a\quad b$ $a\quad b$   Qquad $a\qquad b$ $a\qquad b$   hskip $a\hskip 1em b$ $a\hskip 10em b$   hspace $a\hspace{35pt}b$ $a\hspace{35pt}b$    </description>
+    </item>
     
     <item>
       <title>Math Symbols</title>
@@ -17,8 +26,8 @@
       <pubDate>Sun, 11 Nov 2018 11:00:00 -0700</pubDate>
       
       <guid>https://notes.hadir.ga/latex/math-symbols/</guid>
-      <description> Math Symbols in LaTeX To write math symbols and characteres in LaTeX: - use $ ... $ for inline entries. - use $$ ... $$ for centralized block entries.
-Alphabet Characters    Type LaTeX Code Text Result     Normal uppercase $ABCDEFGHIJ$ $ABCDEFGH$   Normal lowercase $abcdefghij$ $abcdefghij$   Numbers $0123456789$ $0123456789$   Mathcal uppercase $\mathcal{ABCDEFGHIJ}$ $\mathcal{ABCDEFGHIJ}$   Mathcal lowercase $\mathcal{abcdefghij}$ $\mathcal{abcdefghij}$   Mathcal Numbers $\mathcal{0123456789}$ $\mathcal{0123456789}$    Greek Alphabet    Name LaTeX Code Text Result     Alpha $A$ $\alpha$ $A$ $\alpha$   Beta $B$ $\beta$ $B$ $\beta$   Gamma $\Gamma$ $\gamma$ $\Gamma$ $\gamma$   Delta $\Delta$ $\delta$ $\Delta$ $\delta$   Epsilon $E$ $\epsilon$ $E$ $\epsilon$   Zeta $Z$ $\zeta$ $Z$ $\zeta$   Eta $E$ $\eta$ $E$ $\eta$   Theta $\Theta$ $\theta$ $\Theta$ $\theta$   Iota $I$ $\iota$ $I$ $\iota$   Kappa $K$ $\kappa$ $K$ $\kappa$   Lambda $\Lambda$ $\lambda$ $\Lambda$ $\lambda$   Mu $M$ $\mu$ $M$ $\mu$   Nu $N$ $\nu$ $N$ $\nu$   Xi $\Xi$ $\xi$ $\Xi$ $\xi$   Omicron $O$ $\omicron$ $O$ $\omicron$   Pi $\Pi$ $\pi$ $\Pi$ $\pi$   Rho $P$ $\rho$ $P$ $\rho$   Sigma $\Sigma$ $\sigma$ $\Sigma$ $\sigma$   Tau $T$ $\tau$ $T$ $\tau$   Upsilon $\Upsilon$ $\upsilon$ $\Upsilon$ $\upsilon$   Phi $Phi$ $\phi$ $Phi$ $\phi$   Chi $X$ $\chi$ $X$ $\chi$   Psi $\Psi$ $\psi$ $\Psi$ $\psi$   Omega $\Omega$ $\omega$ $\Omega$ $\omega$    Comparison    Name LaTeX Code Text Result     Greater than $&amp;gt;$ $&amp;gt;$   Greater than or equal $\geq$ $\geq$   Less than $&amp;lt;$ $&amp;lt;$   Less than or equal $\leq$ $\leq$    Others    Name LaTeX Code Text Result     Cardinality $\|A\vert$ $   Absolute value $\|a\vert$ $   Parenthesis $(x)$ $(x)$   Brackets $[y]$ $[y]$   Braces $\{z\}$ ${z}$    Operators    Name LaTeX Code Text Result     Sum $+$ $+$   Summatory $\sum{x}$ $\sum{x}$   Product $a\cdot b$ $a\cdot b$   Product $a\times b$ $a\times b$    </description>
+      <description> Math symbols in LaTeX To write math symbols and characteres in LaTeX: - use $ ... $ for inline entries. - use $$ ... $$ for centralized block entries.
+Alphabet Characters    Type LaTeX Code Text Result     Normal uppercase $ABCDEFGHIJ$ $ABCDEFGH$   Normal lowercase $abcdefghij$ $abcdefghij$   Numbers $0123456789$ $0123456789$   Mathcal uppercase $\mathcal{ABCDEFGHIJ}$ $\mathcal{ABCDEFGHIJ}$   Mathcal lowercase $\mathcal{abcdefghij}$ $\mathcal{abcdefghij}$   Mathcal Numbers $\mathcal{0123456789}$ $\mathcal{0123456789}$    Greek Alphabet    Name LaTeX Code Text Result     Alpha $A$ $\alpha$ $A$ $\alpha$   Beta $B$ $\beta$ $B$ $\beta$   Gamma $\Gamma$ $\gamma$ $\Gamma$ $\gamma$   Delta $\Delta$ $\delta$ $\Delta$ $\delta$   Epsilon $E$ $\epsilon$ $E$ $\epsilon$   Zeta $Z$ $\zeta$ $Z$ $\zeta$   Eta $E$ $\eta$ $E$ $\eta$   Theta $\Theta$ $\theta$ $\Theta$ $\theta$   Iota $I$ $\iota$ $I$ $\iota$   Kappa $K$ $\kappa$ $K$ $\kappa$   Lambda $\Lambda$ $\lambda$ $\Lambda$ $\lambda$   Mu $M$ $\mu$ $M$ $\mu$   Nu $N$ $\nu$ $N$ $\nu$   Xi $\Xi$ $\xi$ $\Xi$ $\xi$   Omicron $O$ $\omicron$ $O$ $\omicron$   Pi $\Pi$ $\pi$ $\Pi$ $\pi$   Rho $P$ $\rho$ $P$ $\rho$   Sigma $\Sigma$ $\sigma$ $\Sigma$ $\sigma$   Tau $T$ $\tau$ $T$ $\tau$   Upsilon $\Upsilon$ $\upsilon$ $\Upsilon$ $\upsilon$   Phi $Phi$ $\phi$ $Phi$ $\phi$   Chi $X$ $\chi$ $X$ $\chi$   Psi $\Psi$ $\psi$ $\Psi$ $\psi$   Omega $\Omega$ $\omega$ $\Omega$ $\omega$    Comparison    Name LaTeX Code Text Result     Greater than $&amp;gt;$ $&amp;gt;$   Greater than or equal $\geq$ $\geq$   Less than $&amp;lt;$ $&amp;lt;$   Less than or equal $\leq$ $\leq$    Set theory    Name LaTeX Code Text Result     Cardinality $\|A\vert$ $   Absolute value $\|a\vert$ $   Parenthesis $(x)$ $(x)$   Brackets $[y]$ $[y]$   Braces $\{z\}$ ${z}$   For all $\forall$ $\forall$   Set minus $A\setminus b$ $A\setminus b$    Operators    Name LaTeX Code Text Result     Sum $+$ $+$   Summatory $\sum{x}$ $\sum{x}$   Product $a\cdot b$ $a\cdot b$   Product $a\times b$ $a\times b$    </description>
     </item>
     
   </channel>

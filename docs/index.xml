@@ -12,13 +12,54 @@
     
     
     <item>
+      <title>Spaces in LaTeX</title>
+      <link>https://notes.hadir.ga/latex/spaces/</link>
+      <pubDate>Mon, 19 Nov 2018 22:37:49 +0000</pubDate>
+      
+      <guid>https://notes.hadir.ga/latex/spaces/</guid>
+      <description> Spaces in LaTeX Horizontal Spaces    Name Code Result     No Space $ab$ $ab$   Thin $a\thinspace b$ $a\thinspace b$    $a\ b$ $a\ b$    $a\,b$ $a\,b$    $a\space b$ $a\space b$   En $a\enspace b$ $a\enspace b$   Quad $a\quad b$ $a\quad b$   Qquad $a\qquad b$ $a\qquad b$   hskip $a\hskip 1em b$ $a\hskip 10em b$   hspace $a\hspace{35pt}b$ $a\hspace{35pt}b$    </description>
+    </item>
+    
+    <item>
+      <title>CPRF</title>
+      <link>https://notes.hadir.ga/supply-chain/untitled/</link>
+      <pubDate>Sun, 18 Nov 2018 12:15:24 +0000</pubDate>
+      
+      <guid>https://notes.hadir.ga/supply-chain/untitled/</guid>
+      <description> CPRF - Collaborative Planning, Forecasting, and Replenishment What is CPFR? Why to use CPFR? Where to use CPFR? When to use CPFR? Who may us CPFR? How to use? How much? </description>
+    </item>
+    
+    <item>
+      <title>Converting nb to slides</title>
+      <link>https://notes.hadir.ga/converting-nb-to-slides/</link>
+      <pubDate>Sat, 17 Nov 2018 17:04:15 +0000</pubDate>
+      
+      <guid>https://notes.hadir.ga/converting-nb-to-slides/</guid>
+      <description>Converting nb to slides Open a command line and write the following commands:
+jupyter nbconvert nb_name.ipynb --to slides --post serve  Then automaticaly will be opened the slideshow in the browser.</description>
+    </item>
+    
+    <item>
+      <title>Create a child theme</title>
+      <link>https://notes.hadir.ga/wordpress/create-a-child-theme/</link>
+      <pubDate>Thu, 15 Nov 2018 13:34:00 +0000</pubDate>
+      
+      <guid>https://notes.hadir.ga/wordpress/create-a-child-theme/</guid>
+      <description>Create a child theme To create a child them on Wordpress do the following steps:
+Step 1 Open you server directory via FTP, find you domine and into the wp-content folder find the themesfolder.
+Step 2 Into the themes folder, create a new folder and name it as child-theme.
+Step 3 Create two files, a style.css file and a functions.php file, and write the following lines into them.
+# style.</description>
+    </item>
+    
+    <item>
       <title>Math Symbols</title>
       <link>https://notes.hadir.ga/latex/math-symbols/</link>
       <pubDate>Sun, 11 Nov 2018 11:00:00 -0700</pubDate>
       
       <guid>https://notes.hadir.ga/latex/math-symbols/</guid>
-      <description> Math Symbols in LaTeX To write math symbols and characteres in LaTeX: - use $ ... $ for inline entries. - use $$ ... $$ for centralized block entries.
-Alphabet Characters    Type LaTeX Code Text Result     Normal uppercase $ABCDEFGHIJ$ $ABCDEFGH$   Normal lowercase $abcdefghij$ $abcdefghij$   Numbers $0123456789$ $0123456789$   Mathcal uppercase $\mathcal{ABCDEFGHIJ}$ $\mathcal{ABCDEFGHIJ}$   Mathcal lowercase $\mathcal{abcdefghij}$ $\mathcal{abcdefghij}$   Mathcal Numbers $\mathcal{0123456789}$ $\mathcal{0123456789}$    Greek Alphabet    Name LaTeX Code Text Result     Alpha $A$ $\alpha$ $A$ $\alpha$   Beta $B$ $\beta$ $B$ $\beta$   Gamma $\Gamma$ $\gamma$ $\Gamma$ $\gamma$   Delta $\Delta$ $\delta$ $\Delta$ $\delta$   Epsilon $E$ $\epsilon$ $E$ $\epsilon$   Zeta $Z$ $\zeta$ $Z$ $\zeta$   Eta $E$ $\eta$ $E$ $\eta$   Theta $\Theta$ $\theta$ $\Theta$ $\theta$   Iota $I$ $\iota$ $I$ $\iota$   Kappa $K$ $\kappa$ $K$ $\kappa$   Lambda $\Lambda$ $\lambda$ $\Lambda$ $\lambda$   Mu $M$ $\mu$ $M$ $\mu$   Nu $N$ $\nu$ $N$ $\nu$   Xi $\Xi$ $\xi$ $\Xi$ $\xi$   Omicron $O$ $\omicron$ $O$ $\omicron$   Pi $\Pi$ $\pi$ $\Pi$ $\pi$   Rho $P$ $\rho$ $P$ $\rho$   Sigma $\Sigma$ $\sigma$ $\Sigma$ $\sigma$   Tau $T$ $\tau$ $T$ $\tau$   Upsilon $\Upsilon$ $\upsilon$ $\Upsilon$ $\upsilon$   Phi $Phi$ $\phi$ $Phi$ $\phi$   Chi $X$ $\chi$ $X$ $\chi$   Psi $\Psi$ $\psi$ $\Psi$ $\psi$   Omega $\Omega$ $\omega$ $\Omega$ $\omega$    Comparison    Name LaTeX Code Text Result     Greater than $&amp;gt;$ $&amp;gt;$   Greater than or equal $\geq$ $\geq$   Less than $&amp;lt;$ $&amp;lt;$   Less than or equal $\leq$ $\leq$    Others    Name LaTeX Code Text Result     Cardinality $\|A\vert$ $   Absolute value $\|a\vert$ $   Parenthesis $(x)$ $(x)$   Brackets $[y]$ $[y]$   Braces $\{z\}$ ${z}$    Operators    Name LaTeX Code Text Result     Sum $+$ $+$   Summatory $\sum{x}$ $\sum{x}$   Product $a\cdot b$ $a\cdot b$   Product $a\times b$ $a\times b$    </description>
+      <description> Math symbols in LaTeX To write math symbols and characteres in LaTeX: - use $ ... $ for inline entries. - use $$ ... $$ for centralized block entries.
+Alphabet Characters    Type LaTeX Code Text Result     Normal uppercase $ABCDEFGHIJ$ $ABCDEFGH$   Normal lowercase $abcdefghij$ $abcdefghij$   Numbers $0123456789$ $0123456789$   Mathcal uppercase $\mathcal{ABCDEFGHIJ}$ $\mathcal{ABCDEFGHIJ}$   Mathcal lowercase $\mathcal{abcdefghij}$ $\mathcal{abcdefghij}$   Mathcal Numbers $\mathcal{0123456789}$ $\mathcal{0123456789}$    Greek Alphabet    Name LaTeX Code Text Result     Alpha $A$ $\alpha$ $A$ $\alpha$   Beta $B$ $\beta$ $B$ $\beta$   Gamma $\Gamma$ $\gamma$ $\Gamma$ $\gamma$   Delta $\Delta$ $\delta$ $\Delta$ $\delta$   Epsilon $E$ $\epsilon$ $E$ $\epsilon$   Zeta $Z$ $\zeta$ $Z$ $\zeta$   Eta $E$ $\eta$ $E$ $\eta$   Theta $\Theta$ $\theta$ $\Theta$ $\theta$   Iota $I$ $\iota$ $I$ $\iota$   Kappa $K$ $\kappa$ $K$ $\kappa$   Lambda $\Lambda$ $\lambda$ $\Lambda$ $\lambda$   Mu $M$ $\mu$ $M$ $\mu$   Nu $N$ $\nu$ $N$ $\nu$   Xi $\Xi$ $\xi$ $\Xi$ $\xi$   Omicron $O$ $\omicron$ $O$ $\omicron$   Pi $\Pi$ $\pi$ $\Pi$ $\pi$   Rho $P$ $\rho$ $P$ $\rho$   Sigma $\Sigma$ $\sigma$ $\Sigma$ $\sigma$   Tau $T$ $\tau$ $T$ $\tau$   Upsilon $\Upsilon$ $\upsilon$ $\Upsilon$ $\upsilon$   Phi $Phi$ $\phi$ $Phi$ $\phi$   Chi $X$ $\chi$ $X$ $\chi$   Psi $\Psi$ $\psi$ $\Psi$ $\psi$   Omega $\Omega$ $\omega$ $\Omega$ $\omega$    Comparison    Name LaTeX Code Text Result     Greater than $&amp;gt;$ $&amp;gt;$   Greater than or equal $\geq$ $\geq$   Less than $&amp;lt;$ $&amp;lt;$   Less than or equal $\leq$ $\leq$    Set theory    Name LaTeX Code Text Result     Cardinality $\|A\vert$ $   Absolute value $\|a\vert$ $   Parenthesis $(x)$ $(x)$   Brackets $[y]$ $[y]$   Braces $\{z\}$ ${z}$   For all $\forall$ $\forall$   Set minus $A\setminus b$ $A\setminus b$    Operators    Name LaTeX Code Text Result     Sum $+$ $+$   Summatory $\sum{x}$ $\sum{x}$   Product $a\cdot b$ $a\cdot b$   Product $a\times b$ $a\times b$    </description>
     </item>
     
     <item>
@@ -98,12 +139,12 @@ Ignoring a folder Starts the line writing * followed by / and then the name of t
     </item>
     
     <item>
-      <title>Me</title>
-      <link>https://notes.hadir.ga/about/me/</link>
-      <pubDate>Wed, 24 Oct 2018 14:09:42 -0300</pubDate>
+      <title>Algorithms to solve the TSP</title>
+      <link>https://notes.hadir.ga/operations-research/tsp-solution-methods/</link>
+      <pubDate>Mon, 22 Oct 2018 16:32:58 +0000</pubDate>
       
-      <guid>https://notes.hadir.ga/about/me/</guid>
-      <description>This is a file with informations about me.</description>
+      <guid>https://notes.hadir.ga/operations-research/tsp-solution-methods/</guid>
+      <description>Algorithms to solve the TSP. Exact algorithms Hueristic algorithms import os from gurobipy import * from datetime import datetime from classes import Intance, Solution from util import mtx_distance inst = Instance.load_data() soln = Solution(&#39;TSP&#39;, &#39;MIP Solution&#39;) # the number of cities in the instance. n = inst.nnodes # distances between each pair of cities (i,j) distance = mtx_distance(inst.xlng, inst.ylat, scale=100)  # The Gurobi model for the TSP try: # Initialize the Traveling Salesman Problem Model tsp = Model(&#39;TSP&#39;) tsp.</description>
     </item>
     
     <item>
@@ -134,10 +175,11 @@ import os from gurobipy import * from datetime import datetime  Imports auxiliar
       
       <guid>https://notes.hadir.ga/operations-research/tsp-formulation/</guid>
       <description>The Travel Salesman Problem (TSP) There are two versions of the TSP math formulation based in MIP, the Simetric and asimetric.
+The simetric case, where $c_{ij}=0$ for all $i\geq j$, is NP-complete (Laporte1992b)
+However, the asimetric case is NP-hard.
 Math Formulation for the simetric TSP The math formulation
 Math Formulation for the asimetric TSP The math formulation
-Starts and Ends at the Same City In the case where the salesman starts and ends at the same city, the problem has to new constratins.
-(c1) $$\sum{j=1}^{n}{x{0j}} = 1$$</description>
+Starts and Ends at the Same City In the case where the salesman starts and ends at the same city, the problem has two new constratins.</description>
     </item>
     
     <item>
@@ -146,10 +188,11 @@ Starts and Ends at the Same City In the case where the salesman starts and ends 
       <pubDate>Mon, 22 Oct 2018 16:32:58 +0000</pubDate>
       
       <guid>https://notes.hadir.ga/julia/working-with-dates-and-time-functions/</guid>
-      <description>Working with dates and time functions Examples of date/time functions in Julia.
+      <description> Working with dates and time functions Examples of date/time functions in Julia.
 Preliminaries Load the required packages (if not installed or not updated), it is not necessary to execute every time.
-#In using Pkg Pkg.add(&amp;quot;Dates&amp;quot;) #Out  [32m[1m Resolving[22m[39m package versions... [32m[1m Updating[22m[39m `C:\Users\Hadir Castro\.julia\environments\v1.0\Project.toml` [90m [no changes][39m [32m[1m Updating[22m[39m `C:\Users\Hadir Castro\.julia\environments\v1.0\Manifest.toml` [90m [no changes][39m  Call the &amp;lsquo;Dates&amp;rsquo; package.
-#In using Dates  now() function A simple function that returns the just now time in &#39;YYYY-MM-DDTHH:mm:ss.</description>
+#[In] using Pkg Pkg.add(&amp;quot;Dates&amp;quot;)  Call the &amp;lsquo;Dates&amp;rsquo; package.
+#In using Dates  now() function A simple function that returns the just now time in &#39;YYYY-MM-DDTHH:mm:ss.ms&#39; format.
+#[In] now = Dates.now() #[Out]  2018-11-19T22:37:49.482  </description>
     </item>
     
     <item>
@@ -214,7 +257,7 @@ $ sudo -i -u postgres  So you can access to the prompt :bash:&amp;lsquo;$ psql&a
     </item>
     
     <item>
-      <title>Parallelism-basics</title>
+      <title>Parallelism basics</title>
       <link>https://notes.hadir.ga/julia/parallelism-basics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

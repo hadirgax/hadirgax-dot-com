@@ -1,5 +1,5 @@
 ---
-title: "Parallelism-basics"
+title: "Parallelism basics"
 author: "Hadir Garcia-Castro"
 date: 22018-11-12T16:24:01.176
 type: technical-note
@@ -58,7 +58,101 @@ end
 
 ## Multi-threading
 
+Example:
+
+
+```julia
+# Know how many threads have been used.
+Threads.nthreads()
+```
+
+
+
+
+    1
+
+
+
+
+```julia
+# Define a different number of threads.
+export JULIA_NUM_THREADS=4
+```
+
+
+    syntax: invalid assignment location "export JULIA_NUM_THREADS"
+
+    
+
+
+
+```julia
+Threads.threadid()
+```
+
+
+
+
+    1
+
+
+
+### The `@threads` macro
+
+
+```julia
+a = zeros(10)
+```
+
+
+
+
+    10-element Array{Float64,1}:
+     0.0
+     0.0
+     0.0
+     0.0
+     0.0
+     0.0
+     0.0
+     0.0
+     0.0
+     0.0
+
+
+
+
+```julia
+Threads.@threads for i = 1:10
+    a[i] = Threads.threadid()
+end
+```
+
+
+```julia
+a
+```
+
+
+
+
+    10-element Array{Float64,1}:
+     1.0
+     1.0
+     1.0
+     1.0
+     1.0
+     1.0
+     1.0
+     1.0
+     1.0
+     1.0
+
+
+
 ## Multi-core or distributed processing
+
+Example:
 
 # References
 - [Julia Documentation](https://docs.julialang.org/en/v1/manual/parallel-computing/index.html). Accesed on Nov 12th, 2018
