@@ -3,6 +3,7 @@
 
 # Files
 #########
+*.ipynb
 .ipynb.checkpoints
 */.ipynb.checkpoints/*
 
