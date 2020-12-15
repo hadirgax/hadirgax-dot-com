@@ -20,7 +20,13 @@ sudo apt-get install linux-headers-amd64
 
 if it is not running, then install gcc :bash:'sudo apt-get install build-essential gcc make perl'
 
-2. Run :bash:"sudo sh /media/your_username/VBoxLinuxAdditions.run", and follow the instructions on screen.
+2. Run :bash:"sudo sh /media/your_username/VBoxLinuxAdditions.run", and follow the instructions on screen. Or you can run those steps:
+	1. Type 'apt install build-essential'
+	2. Eject Debian DVD 1 and mount Vbox gest tools
+	3. Copy Vbox content to a new folder
+	4. Type 'chmod -x VBoxLinuxAdditions.run'
+	5. Type 'sh ./VBoxLinuxAdditions.run'
+	6. Restart
 
 
 # Share a folder between Host and Guest

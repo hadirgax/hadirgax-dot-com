@@ -77,3 +77,4 @@ Sum|`$+$`|$+$
 Summatory|`$\sum{x}$`|$\sum{x}$
 Product|`$a\cdot b$`|$a\cdot b$
 Product|`$a\times b$`|$a\times b$
+Equivalent|`$a\equiv b$`|$a\equiv b$
