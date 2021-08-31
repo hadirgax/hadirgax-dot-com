@@ -44,3 +44,6 @@ let bursty = (x, y) => {
   setInterval(() => randomizedConfetti(), 500);
   
   Splitting();
+
+
+  /* -------------------------------- */
