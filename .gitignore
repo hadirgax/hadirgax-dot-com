@@ -20,3 +20,6 @@ __pycache__/
 *.pyd
 *.bat
 *.ps1
+*.pdf
+*.pptx
+*.xlsx
